@@ -20,5 +20,6 @@ for ($i=1; $i <= $n ; $i++) {
 
  echo("</tbody>");
  echo("</table>");
-
-exho 
+ echo("<br/>");
+ $url ="https://github.com/JoseManuelLopezValer0/DWES/blob/main/3.php";
+echo("<a href=$url target=´_blank´> https://github.com/JoseManuelLopezValer0/DWES/blob/main/3.php</a>");
