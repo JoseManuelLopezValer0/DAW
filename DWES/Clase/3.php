@@ -10,11 +10,13 @@ echo("<tbody>");
 $n=10;
 for ($i=1; $i <= $n ; $i++) { 
     echo("<tr>");
+    echo("<td>  $i");
     for ($c=1; $c <= $n ; $c++) {
     echo("<td>");
     echo($i*$c);
     echo("</td>");
     }
+    echo("</td>");
     echo("</tr>");
  }
 
