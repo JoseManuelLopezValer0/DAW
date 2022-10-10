@@ -23,5 +23,5 @@ for ($i=1; $i <= $n ; $i++) {
  echo("</tbody>");
  echo("</table>");
  echo("<br/>");
- $url ="https://github.com/JoseManuelLopezValer0/DWES/blob/main/3.php";
-echo("<a href=$url target=´_blank´> https://github.com/JoseManuelLopezValer0/DWES/blob/main/3.php</a>");
+ $url ="https://github.com/JoseManuelLopezValer0/DAW/blob/main/DAW/DWES/Clase/3.php";
+echo("<a href=$url target=´_blank´> https://github.com/JoseManuelLopezValer0/DAW/blob/main/DAW/DWES/Clase/3.php</a>");

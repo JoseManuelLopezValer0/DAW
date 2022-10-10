@@ -1,15 +1,10 @@
 <?php
-$aasignaturas = array(
-    "DWES" => array("titulo" => "DWES", "Enlace" => "<a href='DAW/DWES'>DWES</a>",),
+$aAsignaturas = array(
+    "DWES" => array("Titulo" => "DWES", "Enlace" => "<a href='/DAW/DWES/'>Carpeta</a>")
 );
 
-foreach ($aEjercicios as $i => $value1) {
-    echo $i;
-    echo "<p>";
-    foreach ($aEjercicios[$i] as $j => $value2) {
-        
-        echo "<p>";
+foreach ($aAsignaturas as $i => $value1) {
+    foreach ($aAsignaturas[$i] as $j => $value) {
+        echo "$value ";
     }
-    echo "<br>";
 };
-echo"enlace";
