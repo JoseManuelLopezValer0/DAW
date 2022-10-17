@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,13 +9,17 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='crono.js'></script>
 </head>
+
 <body>
     <fieldset>
         <legend>Crono</legend>
-        <p><label>Tiempo:<input id="min" type="text" size="1"></label> : <input id="sec" type="text" size="1"></p>
-        <p><button id="start">Empezar</button></p>
-        <p><label id="time"></label></p>
-        </fieldset>
+        
+        <p>Minutos : <input type="number" id="minutos" min="0" max="60"> Segundos : <input type="number" id="segundos" min="0" max="60"></p>
+        <p><button id="añadir" onclick="cambiaTiempo()"> añadir</button></p>
+        <p><label>Tiempo : <input id="min" type="text" size="1"></label> : <input id="sec" type="text" size="1"> <label id="end"></label></p>
+        <p><button id="start" onclick="iniciar()">Empezar</button></p>
+    </fieldset>
 
 </body>
+
 </html>

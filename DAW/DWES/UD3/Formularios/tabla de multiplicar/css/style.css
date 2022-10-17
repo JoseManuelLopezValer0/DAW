@@ -1,0 +1,31 @@
+/* 
+* @author Jose Manuel lopez valero
+* @version 1.0
+*/
+table {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+td {
+    border: 1px solid black;
+    text-align: right;
+    margin: 5px;
+    background-color: white;
+}
+
+input {
+    width: 4em;
+}
+
+.acierto {
+    border: 2px solid green;
+}
+
+.fallo {
+    border: 2px solid red;
+}
+
+.cabecera {
+    font-weight: bold;
+}

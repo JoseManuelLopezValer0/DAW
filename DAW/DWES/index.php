@@ -22,7 +22,8 @@ $aEjercicios = array(
         array("titulo" => "ejercicio 2", "Enlace" => "<a href='UD3/Formularios/ejercicio2.php'>ejercicio2.php</a>", "tags" => "ud3, formularios"),
         array("titulo" => "ejercicio 3", "Enlace" => "<a href='UD3/Formularios/ejercicio3.php'>ejercicio3.php</a>", "tags" => "ud3, formularios"),
         array("titulo" => "ejercicio 4", "Enlace" => "<a href='UD3/Formularios/ejercicio4.php'>ejercicio4.php</a>", "tags" => "ud3, formularios"),
-        array("titulo" => "ejercicio 4", "Enlace" => "<a href='UD3/Formularios/Tabla-formularios.php'>Tabla-formularios.php</a>", "tags" => "ud3, formularios")
+        array("titulo" => "Tabla de multiplicar 1", "Enlace" => "<a href='UD3/Formularios/Tabla-formularios.php'>Tabla-formularios.php</a>", "tags" => "ud3, formularios"),
+        array("titulo" => "Tabla de multiplicar 2", "Enlace" => "<a href='UD3/Formularios/tabla de multiplicar/index.php'>Tabla.php</a>", "tags" => "ud3, formularios")
     )
 );
 
