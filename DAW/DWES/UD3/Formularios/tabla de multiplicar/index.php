@@ -95,5 +95,7 @@ if (isset($_POST['send'])) {
     }
     ?>
 </body>
-
+<footer>
+    <a href="https://github.com/JoseManuelLopezValer0/DAW/tree/main/DAW/DWES/UD3/Formularios/tabla%20de%20multiplicar"></a>
+</footer>
 </html>
