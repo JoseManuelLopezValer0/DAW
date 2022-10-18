@@ -17,6 +17,13 @@ $aEjercicios = array(
         array("titulo" => "ejercicio 2", "Enlace" => "<a href='UD3/calendario.php'>calendario.php</a>", "tags" => "ud3, arrays"),
         array("titulo" => "ejercicio 3", "Enlace" => "<a href='UD3/listaAlumnos.php'>listaAlumnos.php</a>", "tags" => "ud3, arrays")
     ),
+    "Tema 4" => array(
+        array("titulo" => "ejercicio 1", "Enlace" => "<a href='UD4/ejercicio1.php'>ejercicio1.php</a>", "tags" => "ud4, Cookies"),
+        array("titulo" => "ejercicio 2", "Enlace" => "<a href='UD4/ejercicio2.php'>ejercicio2.php</a>", "tags" => "ud4, Cookies"),
+        array("titulo" => "ejercicio 3", "Enlace" => "<a href='UD4/ejercicio3.php'>ejercicio3.php</a>", "tags" => "ud4, Cookies"),
+        array("titulo" => "ejercicio 4", "Enlace" => "<a href='UD4/ejercicio4.php'>ejercicio4.php</a>", "tags" => "ud4, Cookies"),
+        array("titulo" => "ejercicio 5", "Enlace" => "<a href='UD4/ejercicio5.php'>ejercicio5.php</a>", "tags" => "ud4, Cookies")
+    ),
     "Formualrios" => array(
         array("titulo" => "ejercicio 1", "Enlace" => "<a href='UD3/Formularios/ejercicio1.php'>ejercicio1.php</a>", "tags" => "ud3, formularios"),
         array("titulo" => "ejercicio 2", "Enlace" => "<a href='UD3/Formularios/ejercicio2.php'>ejercicio2.php</a>", "tags" => "ud3, formularios"),
@@ -24,31 +31,37 @@ $aEjercicios = array(
         array("titulo" => "ejercicio 4", "Enlace" => "<a href='UD3/Formularios/ejercicio4.php'>ejercicio4.php</a>", "tags" => "ud3, formularios"),
         array("titulo" => "Tabla de multiplicar 1", "Enlace" => "<a href='UD3/Formularios/Tabla-formularios.php'>Tabla-formularios.php</a>", "tags" => "ud3, formularios"),
         array("titulo" => "Tabla de multiplicar 2", "Enlace" => "<a href='UD3/Formularios/tabla de multiplicar/index.php'>Tabla.php</a>", "tags" => "ud3, formularios")
+    ),
+    "Irregulares" => array(
+        array("titulo" => "index.php", "Enlace" => "<a href='Irregulares/index.php'>index.php</a>", "tags" => "formularios, Irregulares"),
     )
+
 );
 
-foreach ($aEjercicios as $i => $value1) {
-    echo $i;
-    echo "<p>";
-    foreach ($aEjercicios[$i] as $j => $value2) {
-        foreach ($aEjercicios[$i][$j] as $k => $value) {
-            echo $value;
-            echo " ";
-        }
-        echo "<p>";
-    }
-    echo "<br>";
-};
 ?>
 <html>
 
 <head>
-    <title>
-        Desarrollo web en entorno servidor - Jose Manuel Lopez Valero
-    </title>
+    <meta charset="UTF-8">
+    <title>Desarrollo web en entorno servidor - Jose Manuel Lopez Valero</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
+    <?php
+    foreach ($aEjercicios as $i => $value1) {
+        echo "<h1>" . $i . "</h1>";
+        echo "<p>";
+        foreach ($aEjercicios[$i] as $j => $value2) {
+            foreach ($aEjercicios[$i][$j] as $k => $value) {
+                echo $value;
+                echo " ";
+            }
+            echo "</br>";
+        }
+    };
+
+    ?>
 </body>
 
 </html>
