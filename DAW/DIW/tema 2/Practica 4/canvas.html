@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 4 Canvas - Jose Manuel Lopez Valero</title>
+    <script src="canvas.js"></script>
+</head>
+
+<body>
+    <canvas id="micanvas" width="500" height="500">
+        Tu navegador no soporta canvas
+    </canvas>
+    <p>
+        Altura:<label id="alt"></label>
+        Anchura:<label id="anc"></label>
+    </p>
+    <p>
+        <input type="range" id="alto" min="250" max="500" onchange="cambiara()" value="500">
+        <input type="range" id="ancho" min="250" max="500" onchange="cambiarc()" value="500">
+        <input type="button" value="Dibujar" onclick="dibujar()">
+    </p>
+</body>
+
+<footer>
+    <h1>
+        Jose Manuel Lopez Valero
+    </h1>
+</footer>
+</html>

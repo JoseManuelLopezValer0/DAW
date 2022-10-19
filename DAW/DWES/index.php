@@ -18,11 +18,11 @@ $aEjercicios = array(
         array("titulo" => "ejercicio 3", "Enlace" => "<a href='UD3/listaAlumnos.php'>listaAlumnos.php</a>", "tags" => "ud3, arrays")
     ),
     "Tema 4" => array(
-        array("titulo" => "ejercicio 1", "Enlace" => "<a href='UD4/ejercicio1/'>ejercicio1.php</a>", "tags" => "ud4, Cookies"),
-        array("titulo" => "ejercicio 2", "Enlace" => "<a href='UD4/ejercicio2/'>ejercicio2.php</a>", "tags" => "ud4, Cookies"),
-        array("titulo" => "ejercicio 3", "Enlace" => "<a href='UD4/ejercicio3/'>ejercicio3.php</a>", "tags" => "ud4, Cookies"),
-        array("titulo" => "ejercicio 4", "Enlace" => "<a href='UD4/ejercicio4/'>ejercicio4.php</a>", "tags" => "ud4, Cookies"),
-        array("titulo" => "ejercicio 5", "Enlace" => "<a href='UD4/ejercicio5/'>ejercicio5.php</a>", "tags" => "ud4, Cookies")
+        array("titulo" => "ejercicio 1", "Enlace" => "<a href='UD4/Ejercicio1/'>ejercicio1.php</a>", "tags" => "ud4, Cookies"),
+        array("titulo" => "ejercicio 2", "Enlace" => "<a href='UD4/Ejercicio2/'>ejercicio2.php</a>", "tags" => "ud4, Cookies"),
+        array("titulo" => "ejercicio 3", "Enlace" => "<a href='UD4/Ejercicio3/'>ejercicio3.php</a>", "tags" => "ud4, Cookies"),
+        array("titulo" => "ejercicio 4", "Enlace" => "<a href='UD4/Ejercicio4/'>ejercicio4.php</a>", "tags" => "ud4, Cookies"),
+        array("titulo" => "ejercicio 5", "Enlace" => "<a href='UD4/Ejercicio5/'>ejercicio5.php</a>", "tags" => "ud4, Cookies")
     ),
     "Formualrios" => array(
         array("titulo" => "ejercicio 1", "Enlace" => "<a href='UD3/Formularios/ejercicio1.php'>ejercicio1.php</a>", "tags" => "ud3, formularios"),
