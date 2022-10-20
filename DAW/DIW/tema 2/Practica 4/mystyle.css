@@ -1,0 +1,14 @@
+
+.alt {
+    display: inline-block;
+    width: 20px;
+    padding: 0;
+  }
+  
+  .alt input {
+    width: 150px;
+    height: 20px;
+    margin: 0;
+    transform-origin: 0px 0px;
+    transform: rotate(-90deg);
+}

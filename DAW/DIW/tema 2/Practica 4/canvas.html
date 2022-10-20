@@ -7,20 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 4 Canvas - Jose Manuel Lopez Valero</title>
     <script src="canvas.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 
 <body>
     <canvas id="micanvas" width="500" height="500">
         Tu navegador no soporta canvas
     </canvas>
+    Altura:<label id="alt"></label>
+    <div class="alt">
+
+
+        <input type="range" id="alto" min="250" max="500" onchange="cambiara()" value="500" step="1">
+
+    </div>
     <p>
-        Altura:<label id="alt"></label>
-        Anchura:<label id="anc"></label>
-    </p>
-    <p>
-        <input type="range" id="alto" min="250" max="500" onchange="cambiara()" value="500">
-        <input type="range" id="ancho" min="250" max="500" onchange="cambiarc()" value="500">
-        <input type="button" value="Dibujar" onclick="dibujar()">
+        Anchura:<label id="anc"></label> <input type="range" id="ancho" min="250" max="500" onchange="cambiarc()"
+            value="500"> <input type="button" value="Dibujar" onclick="dibujar()">
+        <p>
+            Bucle que hace que la imagen se de la vuelta, jugar con los delizadores(recargar para detener). <input
+                type="button" value="Bucle" onclick="bucle()">
+        </p>
     </p>
 </body>
 
@@ -29,4 +36,5 @@
         Jose Manuel Lopez Valero
     </h1>
 </footer>
+
 </html>

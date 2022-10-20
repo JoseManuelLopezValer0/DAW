@@ -16,15 +16,19 @@
 
     <?php
     $aAsignaturas = array(
-        "DWES" => array("Titulo" => "DWES", "Enlace" => "<a href='/DAW/DWES/'>DWES</a>"),
-        "DWEC" => array("Titulo" => "DWEC", "Enlace" => "<a href='/DAW/DWEC/'>DWEC</a>"),
-        "DIW" => array("Titulo" => "DIW", "Enlace" => "<a href='/DAW/DIW/'>DIW</a>"),
-        "DAW" => array("Titulo" => "DAW", "Enlace" => "<a href='/DAW/DAW/'>DAW</a>"),
-        "HLC" => array("Titulo" => "HLC", "Enlace" => "<a href='/DAW/HLC/'>HLC</a>")
+        "DWES" => array("Titulo" => "DWES", "Enlace" => "<a href='/DAW/DWES/'>"),
+        "DWEC" => array("Titulo" => "DWEC", "Enlace" => "<a href='/DAW/DWEC/'>"),
+        "DIW" => array("Titulo" => "DIW", "Enlace" => "<a href='/DAW/DIW/'>"),
+        "DAW" => array("Titulo" => "DAW", "Enlace" => "<a href='/DAW/DAW/'>"),
+        "HLC" => array("Titulo" => "HLC", "Enlace" => "<a href='/DAW/HLC/'>")
     );
 
     foreach ($aAsignaturas as $i => $value1) {
+        echo "<li>";
         echo $value1["Enlace"];
+        echo "<span class=name>$value1[Titulo]</span>";
+        echo "</a>";
+        echo "</li>";
         echo" ";
     };
 
