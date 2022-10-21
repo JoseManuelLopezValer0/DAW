@@ -1,11 +1,11 @@
 <?php
 $aEjercicios = array(
     "UD1" => array(
-        array("titulo" => "A0", "Enlace" => "<a href='UD 1/A0/'>"),
-        array("titulo" => "A3 Módulos ES6", "Enlace" => "<a href='UD 1/A3 Módulos ES6/'>"),
-        array("titulo" => "ud1-a2-destructuracion-destructuring-JoseManuelLopezValer0", "Enlace" => "<a href='UD 1/ud1-a2-destructuracion-destructuring-JoseManuelLopezValer0/'>"),
-        array("titulo" => "ud1-a3-modulos-es6-JoseManuelLopezValer0", "Enlace" => "<a href='UD 1/ud1-a3-modulos-es6-JoseManuelLopezValer0/'>"),
-        array("titulo" => "ud1-a4-clases-en-javascript-JoseManuelLopezValer0", "Enlace" => "<a href='UD 1/ud1-a4-clases-en-javascript-JoseManuelLopezValer0/'>"),
+        array("titulo" => "A0", "Enlace" => "<a class='alista' href='UD 1/A0/'>"),
+        array("titulo" => "A3 Módulos ES6", "Enlace" => "<a class='alista' href='UD 1/A3 Módulos ES6/'>"),
+        array("titulo" => "ud1-a2-destructuracion-destructuring-JoseManuelLopezValer0", "Enlace" => "<a class='alista' href='UD 1/ud1-a2-destructuracion-destructuring-JoseManuelLopezValer0/'>"),
+        array("titulo" => "ud1-a3-modulos-es6-JoseManuelLopezValer0", "Enlace" => "<a class='alista' href='UD 1/ud1-a3-modulos-es6-JoseManuelLopezValer0/'>"),
+        array("titulo" => "ud1-a4-clases-en-javascript-JoseManuelLopezValer0", "Enlace" => "<a class='alista' href='UD 1/ud1-a4-clases-en-javascript-JoseManuelLopezValer0/'>"),
     ),
 );
 
@@ -14,20 +14,32 @@ $aEjercicios = array(
 
 <head>
     <meta charset="UTF-8">
-    <title>Desarrollo web en entorno servidor - Jose Manuel Lopez Valero</title>
+    <title>Horas de libre configuracion - Jose Manuel Lopez Valero</title>
     <link rel="stylesheet" href="css/estilo.css">
-</head>
+    </head>
 
 <body>
-<a href="../../"><input type="button" value="Volver" class="css-button-fully-rounded--black"></input></a>
-<hr>
+    <header class="super-cabecera">
+        <nav>
+            <ul>
+                <li><a href="../../">
+                        <i class="fa fa-fw fa-home fa-5x"></i>
+                        <span class="borde"></span>
+                        <span class="texto">VOLVER</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
     <?php
     foreach ($aEjercicios as $i => $value1) {
         echo "<h1>$i</h1>";
         foreach ($value1 as $j => $value2) {
-            echo "<li>";
+            echo "<li class='lilista'>";
             echo $value2["Enlace"];
-            echo "<span class=name>$value2[titulo]</span>";
+            echo "<span class='spanlista' class=name>$value2[titulo]</span>";
             echo "</a>";
             echo "</li>";
             echo " ";
@@ -37,4 +49,4 @@ $aEjercicios = array(
     ?>
 </body>
 
-</html>
+</html>F
