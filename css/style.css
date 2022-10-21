@@ -64,3 +64,23 @@ li {
     line-height: normal;
     color: #555;
 }
+h1 {
+    line-height: 1.2em;
+    text-indent: 0;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    outline: 0;
+    line-height: normal;
+    color: #555;
+}
+p   {
+    line-height: 1.2em;
+    text-indent: 0;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    outline: 0;
+    line-height: normal;
+    color: rgb(75, 75, 75);
+}

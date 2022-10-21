@@ -64,3 +64,33 @@ li {
     line-height: normal;
     color: #555;
 }
+.css-button-fully-rounded--black {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #212529;
+    background: #212529;
+}
+
+.css-button-fully-rounded--black:hover {
+    background: #fff;
+    color: #212529
+}
+h1 {
+    line-height: 1.2em;
+    text-indent: 0;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    outline: 0;
+    line-height: normal;
+    color: #555;
+}
