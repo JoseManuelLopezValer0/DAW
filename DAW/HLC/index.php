@@ -20,6 +20,7 @@ $aEjercicios = array(
 
 <body>
 <a href="../../"><input type="button" value="Volver" class="css-button-fully-rounded--black"></input></a>
+<hr>
     <?php
     foreach ($aEjercicios as $i => $value1) {
         echo "<h1>$i</h1>";
@@ -31,6 +32,7 @@ $aEjercicios = array(
             echo "</li>";
             echo " ";
         }
+        echo "<hr>";
     };
     ?>
 </body>
