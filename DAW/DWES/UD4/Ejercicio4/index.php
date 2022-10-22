@@ -17,7 +17,7 @@ if (!isset($_SESSION['contador'])) {
     $_SESSION['contador']++;
 }
 //se muestra la sesion
-echo "El contador de sesiones es: " . $_SESSION['contador'];
+echo "El contador de SESSION es: " . $_SESSION['contador'];
 //se guarda la hora de la ultima vez que se cargo la pagina
 $_SESSION['hora'] = time();
 //si han pasado 5 segundos se borra la sesion con 5 segundos de delay
