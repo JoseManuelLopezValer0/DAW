@@ -16,11 +16,11 @@
 
     <?php
     $aAsignaturas = array(
-        "DWES" => array("Titulo" => "DWES", "Enlace" => "<a href='/DAW/DWES/'>"),
-        "DWEC" => array("Titulo" => "DWEC", "Enlace" => "<a href='/DAW/DWEC/'>"),
-        "DIW" => array("Titulo" => "DIW", "Enlace" => "<a href='/DAW/DIW/'>"),
         "DAW" => array("Titulo" => "DAW", "Enlace" => "<a href='/DAW/DAW/'>"),
-        "HLC" => array("Titulo" => "HLC", "Enlace" => "<a href='/DAW/HLC/'>")
+        "DIW" => array("Titulo" => "DIW", "Enlace" => "<a href='/DAW/DIW/'>"),
+        "DWEC" => array("Titulo" => "DWEC", "Enlace" => "<a href='/DAW/DWEC/'>"),
+        "DWES" => array("Titulo" => "DWES", "Enlace" => "<a href='/DAW/DWES/'>"),
+        "HLC" => array("Titulo" => "HLC", "Enlace" => "<a href='/DAW/HLC/'>"),
     );
 
     foreach ($aAsignaturas as $i => $value1) {
