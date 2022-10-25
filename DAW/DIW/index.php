@@ -8,6 +8,7 @@ $aEjercicios = array(
         array("titulo" => "Practica 3", "Enlace" => "<a class='alista'href='tema 2/Practica 3/'>"),
         array("titulo" => "Practica 4", "Enlace" => "<a class='alista'href='tema 2/Practica 4/'>"),
         array("titulo" => "Practica 5", "Enlace" => "<a class='alista'href='tema 2/Practica 5/'>"),
+        array("titulo" => "Practica 6", "Enlace" => "<a class='alista'href='tema 2/Practica 6/'>"),
     ),
     "Ejemplos" => array(
         array("titulo" => "Ejemplo", "Enlace" => "<a class='alista'href='Clase/Ejemplos/'>"),
