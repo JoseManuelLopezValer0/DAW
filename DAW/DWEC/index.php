@@ -22,6 +22,8 @@ $aEjercicios = array(
         array("titulo" => "tarea-2-7-organismos-y-estandares-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 2/tarea-2-7-organismos-y-estandares-JoseManuelLopezValer0'>"),
         array("titulo" => "tarea-2-8-ambitos-y-closures-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 2/tarea-2-8-ambitos-y-closures-JoseManuelLopezValer0'>"),
         array("titulo" => "tarea-2-9-los-tres-puntitos-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 2/tarea-2-9-los-tres-puntitos-JoseManuelLopezValer0'>"),
+        array("titulo" => "tarea-2-9-nullish-falsy-y-otros-entretenimientos-js-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 2/tarea-2-9-nullish-falsy-y-otros-entretenimientos-js-JoseManuelLopezValer0'>"),
+        array("titulo" => "tarea-2-11-bucles-for-y-sus-allegados-iterables-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 2/tarea-2-11-bucles-for-y-sus-allegados-iterables-JoseManuelLopezValer0'>"),
     ),
 
 
