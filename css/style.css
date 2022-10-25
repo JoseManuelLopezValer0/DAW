@@ -13,7 +13,7 @@ span {
     padding: 0;
     outline: 0;
     white-space: nowrap;
-    color: #555;
+    color: rgb(241, 241, 241);
     font-size: 2em;
     line-height: 1.2em;
     list-style: none;
@@ -36,7 +36,7 @@ a {
     border-radius: 5px;
     overflow: hidden;
     white-space: nowrap;
-    color: #555;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 2em;
     line-height: 1.2em;
@@ -51,7 +51,7 @@ li {
     float: none;
     width: auto !important;
     display: block;
-    border-bottom: 1px solid #cacaca;
+    border-bottom: 1px solid #ffffff;
     font-size: 2em;
     line-height: 1.2em;
     text-indent: 0;
@@ -62,7 +62,7 @@ li {
     font: 13px "Helvetica Neue", "Lucida Grande", "Arial";
     font-size: 13px;
     line-height: normal;
-    color: #555;
+    color: rgb(255, 255, 255);
 }
 h1 {
     line-height: 1.2em;
@@ -72,7 +72,7 @@ h1 {
     padding: 0;
     outline: 0;
     line-height: normal;
-    color: #555;
+    color: rgb(255, 255, 255);
 }
 p   {
     line-height: 1.2em;
@@ -82,5 +82,8 @@ p   {
     padding: 0;
     outline: 0;
     line-height: normal;
-    color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+}
+body {
+    background-color: #000000;
 }
