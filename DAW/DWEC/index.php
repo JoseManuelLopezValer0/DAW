@@ -18,6 +18,7 @@ $aEjercicios = array(
     ),
     "UD 2" => array(
         array("titulo" => "ej1-17-introduccion-a-javascritp-javier-eguiluz-perez-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 2/ej1-17-introduccion-a-javascritp-javier-eguiluz-perez-JoseManuelLopezValer0 '>"),
+        array("titulo" => "examen-ud2-practico-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 2/examen-ud2-practico-JoseManuelLopezValer0 '>"),
         array("titulo" => "tarea-2-5-tipos-de-datos-primitivos-y-objetos-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 2/tarea-2-5-tipos-de-datos-primitivos-y-objetos-JoseManuelLopezValer0'>"),
         array("titulo" => "tarea-2-7-organismos-y-estandares-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 2/tarea-2-7-organismos-y-estandares-JoseManuelLopezValer0'>"),
         array("titulo" => "tarea-2-8-ambitos-y-closures-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 2/tarea-2-8-ambitos-y-closures-JoseManuelLopezValer0'>"),
@@ -25,9 +26,10 @@ $aEjercicios = array(
         array("titulo" => "tarea-2-9-nullish-falsy-y-otros-entretenimientos-js-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 2/tarea-2-9-nullish-falsy-y-otros-entretenimientos-js-JoseManuelLopezValer0'>"),
         array("titulo" => "tarea-2-11-bucles-for-y-sus-allegados-iterables-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 2/tarea-2-11-bucles-for-y-sus-allegados-iterables-JoseManuelLopezValer0'>"),
     ),
-
-
-
+    "UD 3" => array(
+        array("titulo" => "Tarea 3.1. Presentación Objetos predefinidos en JavaScript", "Enlace" => "<a class='alista'href='UD 3/Tarea 3.1. Presentación Objetos predefinidos en JavaScript'>"),
+        array("titulo" => "tarea-3-1-listado-string-y-regexp-JoseManuelLopezValer0", "Enlace" => "<a class='alista'href='UD 3/tarea-3-1-listado-string-y-regexp-JoseManuelLopezValer0'>"),
+    ),
 );
 
 ?>
