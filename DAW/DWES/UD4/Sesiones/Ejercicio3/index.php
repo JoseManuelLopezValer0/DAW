@@ -8,61 +8,31 @@
  * @version: 1.0
  * 
  */
+//Buscaminas
 
-include "lib/funciones.php";
-include "config/config.php";
-
-$procesaformulario = false;
-$usuario = "";
-$pass = "";
-
-if (isset($_COOKIE['enviar'])) {
-    $procesaformulario = true;
-    $usuario = $_COOKIE['usuario'];
-    $pass = $_COOKIE['pass'];
+//Creamos la matriz
+$matriz = array();
+//Creamos la matriz de 10x10
+for ($i = 0; $i < 10; $i++) {
+    for ($j = 0; $j < 10; $j++) {
+        $matriz[$i][$j] = 0;
+    }
 }
 
-if (isset($_POST['enviar'])) {
-    if ($_POST['usuario'] == "usuario" &&  $_POST['pass'] == "1234") { {
-            $procesaformulario = true;
-            setcookie('usuario', $_POST['usuario'], time() + 3600);
-            setcookie('pass', $_POST['pass'], time() + 3600);
+//Creamos las minas
+for ($i = 0; $i < 10; $i++) {
+    $minas = rand(0, 9);
+    $matriz[$minas][$minas] = 1;
+}
+
+//Mostramos la matriz con las minas
+for ($i = 0; $i < 10; $i++) {
+    for ($j = 0; $j < 10; $j++) {
+        if ($matriz[$i][$j] == 1) {
+            echo "<img src='mina.png'>";
+        } else {
+            echo "<img src='celda.png'>";
         }
     }
+    echo "<br>";
 }
-
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Jose Manuel Lopez Valero">
-    <title>Ejercicio 3</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <?php
-    if ($procesaformulario) {
-        echo "Bienvenido";
-    } else {
-        echo "Usuario o contraseña incorrectos";
-    }
-    ?>
-    <form action="index.php" method="post">
-        <fieldset>
-            <legend>Formulario</legend>
-            <label for="usuario">Usuario</label>
-            <input type="text" name="usuario" id="usuario" value="<?php echo $usuario; ?>">
-            <label for="pass">Contraseña</label>
-            <input type="password" name="pass" id="pass" value="<?php echo $pass; ?>">
-            recordar
-            <input type="checkbox" name="recordar" id="recordar" value="recordar">
-            <input type="submit" name="enviar" value="Enviar">
-        </fieldset>
-    </form>
-
-</body>
-
-</html>
