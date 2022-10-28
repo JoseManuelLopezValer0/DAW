@@ -34,7 +34,7 @@ if (isset($_SESSION['usuario'])) {
         echo "<li><a href='baja.php'>Baja de usuario</a></li>";
         echo "<li><a href='modificar.php'>Modificar usuario</a></li>";
         echo "<li><a href='listar.php'>Listar usuarios</a></li>";
-        echo "<li><a href='logout.php'>Cerrar sesión</a></li>";
+        echo "<li><a href='lib/logout.php'>Cerrar sesión</a></li>";
         echo "</ul>";
     }
 }
@@ -46,7 +46,7 @@ if (isset($_SESSION['usuario'])) {
         echo "<h1>Menú de usuario</h1>";
         echo "<ul>";
         echo "<li><a href='index.php'>Inicio</a></li>";
-        echo "<li><a href='logout.php'>Cerrar sesión</a></li>";
+        echo "<li><a href='lib/logout.php'>Cerrar sesión</a></li>";
         echo "</ul>";
     }
 }
