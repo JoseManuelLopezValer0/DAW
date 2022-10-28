@@ -31,7 +31,6 @@ $aEjercicios = array(
     ),
     "Tema 4 - Autentificación" => array(
         array("titulo" => "ejercicio 1", "Enlace" => "<a class='alista'href='UD4/Autentificación/Ejercicio1/'>", "tags" => "ud4, Autentificación"),
-        array("titulo" => "ejercicio 2", "Enlace" => "<a class='alista'href='UD4/Autentificación/Ejercicio2/'>", "tags" => "ud4, Autentificación"),
         array("titulo" => "ejercicio 3", "Enlace" => "<a class='alista'href='UD4/Autentificación/Ejercicio3/'>", "tags" => "ud4, Autentificación"),
     ),
     "Formualrios" => array(
