@@ -12,57 +12,42 @@
 include "lib/funciones.php";
 include "config/config.php";
 
-$procesaformulario = false;
-$usuario = "";
-$pass = "";
+// Desarrolla un sistema de registro y autentificación que incluya distintos perfiles de usuarios. Crea un menú de opciones y páginas correspondientes en función del perfil.
 
-if (isset($_COOKIE['enviar'])) {
-    $procesaformulario = true;
-    $usuario = $_COOKIE['usuario'];
-    $pass = $_COOKIE['pass'];
+// Inicio de sesión
+session_start();
+
+// Si no existe la variable de sesión, se redirige al usuario a la página de login
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.php");
 }
 
-if (isset($_POST['enviar'])) {
-    if ($_POST['usuario'] == "usuario" &&  $_POST['pass'] == "1234") { {
-            $procesaformulario = true;
-            setcookie('usuario', $_POST['usuario'], time() + 3600);
-            setcookie('pass', $_POST['pass'], time() + 3600);
-        }
+// Si existe la variable de sesión, se compeueba si es admin y se muestra su menú
+
+if (isset($_SESSION['usuario'])) {
+    if (esAdmin($_SESSION['usuario'])) {
+        echo "<h1>Menú de administrador</h1>";
+        echo "<ul>";
+        echo "<li><a href='index.php'>Inicio</a></li>";
+        echo "<li><a href='alta.php'>Alta de usuario</a></li>";
+        echo "<li><a href='baja.php'>Baja de usuario</a></li>";
+        echo "<li><a href='modificar.php'>Modificar usuario</a></li>";
+        echo "<li><a href='listar.php'>Listar usuarios</a></li>";
+        echo "<li><a href='logout.php'>Cerrar sesión</a></li>";
+        echo "</ul>";
     }
 }
 
-?>
-<!DOCTYPE html>
-<html lang="en">
+// Si existe la variable de sesión, se comprueba si es otro usuario y se muestra su menú
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Jose Manuel Lopez Valero">
-    <title>Ejercicio 3</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <?php
-    if ($procesaformulario) {
-        echo "Bienvenido";
-    } else {
-        echo "Usuario o contraseña incorrectos";
+if (isset($_SESSION['usuario'])) {
+    if (!esAdmin($_SESSION['usuario'])) {
+        echo "<h1>Menú de usuario</h1>";
+        echo "<ul>";
+        echo "<li><a href='index.php'>Inicio</a></li>";
+        echo "<li><a href='logout.php'>Cerrar sesión</a></li>";
+        echo "</ul>";
     }
-    ?>
-    <form action="index.php" method="post">
-        <fieldset>
-            <legend>Formulario</legend>
-            <label for="usuario">Usuario</label>
-            <input type="text" name="usuario" id="usuario" value="<?php echo $usuario; ?>">
-            <label for="pass">Contraseña</label>
-            <input type="password" name="pass" id="pass" value="<?php echo $pass; ?>">
-            recordar
-            <input type="checkbox" name="recordar" id="recordar" value="recordar">
-            <input type="submit" name="enviar" value="Enviar">
-        </fieldset>
-    </form>
+}
 
-</body>
-
-</html>
