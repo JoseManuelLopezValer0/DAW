@@ -1,57 +1,114 @@
 h1 {
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 }
 h2 {
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 }
-div ul {
-    border: 2px solid rgb(0, 0, 0);
-    padding: .5em;
-    align-content: center;
-  }
+
+hr {
+    color: #000;
+    background-color: #adb5bd;
+    border-radius: 12px;
+    height: 5px;
+    border: 10px;
+}
 
 li {
-    border: 2px solid rgb(0, 0, 0);
-    padding: .5em;
-    width: 70px;
-    text-align: center;
-    margin: 5px;
+  padding: 0.5em;
+  width: fit-content;
+  text-align: center;
+  margin: 5px;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    width: 100%;
+.menu {
+  border: 2px solid rgb(255 255 255);
+  padding: 0.5em;
+  align-content: center;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  width: 100%;
 }
-ul .Contenido {
-    border: 0px solid rgba(0, 0, 0, 0);
-    padding: .5em;
-    align-content: center;
-  }
-div .contenido {
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: 2px solid rgb(0, 0, 0);
-    padding: .5em;
-    align-content: center;
-    width: 50%;
-    margin: 0 auto;
-    align-items: center;
+.Cuerpo {
+  display: flex;
 }
-hr  {
-    width: 50%;
+.contenido {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 0.5em;
+  align-content: center;
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+  display: inline-block;
+}
+
+article {
+  border: 10px solid #adb5bd;
+  border-radius: 12px;
+  padding: 0.5em;
+  text-align: center;
+  margin: 5px;
+}
+.rrss {
+  border-color: rgb(0, 0, 0, 0);
+  list-style: none;
+}
+
+.css-button-shadow-border-sliding--sand {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #adb5bd;
+  z-index: 1;
+}
+.css-button-shadow-border-sliding--sand:hover:after {
+  width: 100%;
+  left: 0;
+}
+.css-button-shadow-border-sliding--sand:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #ced4da;
+  right: 0;
+}
+.css-button-shadow-border-sliding--sand:active {
+  top: 2px;
+}
+
+a {
+  text-decoration: none;
 }
