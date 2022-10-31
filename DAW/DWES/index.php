@@ -43,7 +43,12 @@ $aEjercicios = array(
     ),
     "Irregulares" => array(
         array("titulo" => "index.php", "Enlace" => "<a class='alista'href='Irregulares/index.php'>", "tags" => "formularios, Irregulares"),
+    ),
+
+    "Examenes" => array(
+        array("titulo" => "Examen 1", "Enlace" => "<a class='alista'href='Examenes/RA3/'>", "tags" => "examen, 1"),
     )
+
 
 );
 
