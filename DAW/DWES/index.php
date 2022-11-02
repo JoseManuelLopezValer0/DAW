@@ -17,6 +17,14 @@ $aEjercicios = array(
         array("titulo" => "ejercicio 2", "Enlace" => "<a class='alista'href='UD3/calendario.php'>", "tags" => "ud3, arrays"),
         array("titulo" => "ejercicio 3", "Enlace" => "<a class='alista'href='UD3/listaAlumnos.php'>", "tags" => "ud3, arrays")
     ),
+    "Formualrios" => array(
+        array("titulo" => "ejercicio 1", "Enlace" => "<a class='alista'href='UD3/Formularios/ejercicio1.php'>", "tags" => "ud3, formularios"),
+        array("titulo" => "ejercicio 2", "Enlace" => "<a class='alista'href='UD3/Formularios/ejercicio2.php'>", "tags" => "ud3, formularios"),
+        array("titulo" => "ejercicio 3", "Enlace" => "<a class='alista'href='UD3/Formularios/ejercicio3.php'>", "tags" => "ud3, formularios"),
+        array("titulo" => "ejercicio 4", "Enlace" => "<a class='alista'href='UD3/Formularios/ejercicio4.php'>", "tags" => "ud3, formularios"),
+        array("titulo" => "Tabla de multiplicar 1", "Enlace" => "<a class='alista'href='UD3/Formularios/Tabla-formularios.php'>", "tags" => "ud3, formularios"),
+        array("titulo" => "Tabla de multiplicar 2", "Enlace" => "<a class='alista'href='UD3/Formularios/tabla de multiplicar/'>", "tags" => "ud3, formularios")
+    ),
     "Tema 4 - Cookies" => array(
         array("titulo" => "ejercicio 1", "Enlace" => "<a class='alista'href='UD4/Cookies/Ejercicio1/'>", "tags" => "ud4, Cookies"),
         array("titulo" => "ejercicio 2", "Enlace" => "<a class='alista'href='UD4/Cookies/Ejercicio2/'>", "tags" => "ud4, Cookies"),
@@ -32,19 +40,10 @@ $aEjercicios = array(
     "Tema 4 - Autentificación" => array(
         array("titulo" => "ejercicio 1", "Enlace" => "<a class='alista'href='UD4/Autentificación/Ejercicio1/'>", "tags" => "ud4, Autentificación"),
         array("titulo" => "ejercicio 3", "Enlace" => "<a class='alista'href='UD4/Autentificación/Ejercicio3/'>", "tags" => "ud4, Autentificación"),
+    ),    
+    "Proyectos Clase" => array(
+        array("titulo" => "Irregulares", "Enlace" => "<a class='alista'href='Irregulares/index.php'>", "tags" => "formularios, Irregulares"),
     ),
-    "Formualrios" => array(
-        array("titulo" => "ejercicio 1", "Enlace" => "<a class='alista'href='UD3/Formularios/ejercicio1.php'>", "tags" => "ud3, formularios"),
-        array("titulo" => "ejercicio 2", "Enlace" => "<a class='alista'href='UD3/Formularios/ejercicio2.php'>", "tags" => "ud3, formularios"),
-        array("titulo" => "ejercicio 3", "Enlace" => "<a class='alista'href='UD3/Formularios/ejercicio3.php'>", "tags" => "ud3, formularios"),
-        array("titulo" => "ejercicio 4", "Enlace" => "<a class='alista'href='UD3/Formularios/ejercicio4.php'>", "tags" => "ud3, formularios"),
-        array("titulo" => "Tabla de multiplicar 1", "Enlace" => "<a class='alista'href='UD3/Formularios/Tabla-formularios.php'>", "tags" => "ud3, formularios"),
-        array("titulo" => "Tabla de multiplicar 2", "Enlace" => "<a class='alista'href='UD3/Formularios/tabla de multiplicar/'>", "tags" => "ud3, formularios")
-    ),
-    "Irregulares" => array(
-        array("titulo" => "index.php", "Enlace" => "<a class='alista'href='Irregulares/index.php'>", "tags" => "formularios, Irregulares"),
-    ),
-
     "Examenes" => array(
         array("titulo" => "Examen 1", "Enlace" => "<a class='alista'href='Examenes/RA3/'>", "tags" => "examen, 1"),
     )
