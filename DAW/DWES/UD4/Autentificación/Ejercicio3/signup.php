@@ -36,11 +36,11 @@ else {
 if (isset($_POST['perfil']) && $_POST['perfil'] == 'administrador') {
     $password = $_POST['password'];
     if ($password == 'admin') {
-        if (isset($_POST['usuario']) && isset($_POST['correo']) && isset($_POST['password']) && isset($_POST['perfil'])) {
+        if (isset($_POST['usuario']) && isset($_POST['correo']) && isset($_POST['password'])) {
             if (existeUsuario($_POST['usuario'])) {
                 echo "<p>El usuario ya existe</p>";
             } else {
-                registrarUsuario($_POST['usuario'], $_POST['correo'], $_POST['password'], $_POST['perfil']);
+                registrarUsuario($_POST['usuario'], $_POST['correo'], $_POST['password']);
                 echo "<p>Usuario registrado</p>";
             }
         }

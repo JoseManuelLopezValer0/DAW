@@ -43,15 +43,6 @@ function registrarUsuario($usuario, $correo , $password){
     }
 }
 
-// obtener perfil
-function obtenerPerfil($usuario)
-{
-    $con = conect();
-    $sql = "SELECT perfil FROM usuarios WHERE usuario = '$usuario'";
-    $result = mysqli_query($con, $sql);
-    $row = mysqli_fetch_array($result);
-    return $row['perfil'];
-}
 
 function existeUsuario($usuario)
 {
