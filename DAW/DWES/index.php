@@ -47,6 +47,7 @@ $aEjercicios = array(
         array("titulo" => "ejercicio 3", "Enlace" => "<a class='alista'href='UD4/Ficheros/Ejercicio3/'>", "tags" => "ud4, Ficheros"),
         array("titulo" => "ejercicio 4", "Enlace" => "<a class='alista'href='UD4/Ficheros/Ejercicio4/'>", "tags" => "ud4, Ficheros"),
         array("titulo" => "ejercicio 5", "Enlace" => "<a class='alista'href='UD4/Ficheros/Ejercicio5/'>", "tags" => "ud4, Ficheros"),
+        array("titulo" => "Ejemplo", "Enlace" => "<a class='alista'href='UD4/Ficheros/Clase/'>", "tags" => "ud4, Ficheros"),
     ),    
     "Proyectos Clase" => array(
         array("titulo" => "Irregulares", "Enlace" => "<a class='alista'href='Irregulares/index.php'>", "tags" => "formularios, Irregulares"),
