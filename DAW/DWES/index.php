@@ -40,6 +40,13 @@ $aEjercicios = array(
     "Tema 4 - Autentificación" => array(
         array("titulo" => "ejercicio 1", "Enlace" => "<a class='alista'href='UD4/Autentificación/Ejercicio1/'>", "tags" => "ud4, Autentificación"),
         array("titulo" => "ejercicio 3", "Enlace" => "<a class='alista'href='UD4/Autentificación/Ejercicio3/'>", "tags" => "ud4, Autentificación"),
+    ),
+    "Tema 4 - Ficheros" => array(
+        array("titulo" => "ejercicio 1", "Enlace" => "<a class='alista'href='UD4/Ficheros/Ejercicio1/'>", "tags" => "ud4, Ficheros"),
+        array("titulo" => "ejercicio 2", "Enlace" => "<a class='alista'href='UD4/Ficheros/Ejercicio2/'>", "tags" => "ud4, Ficheros"),
+        array("titulo" => "ejercicio 3", "Enlace" => "<a class='alista'href='UD4/Ficheros/Ejercicio3/'>", "tags" => "ud4, Ficheros"),
+        array("titulo" => "ejercicio 4", "Enlace" => "<a class='alista'href='UD4/Ficheros/Ejercicio4/'>", "tags" => "ud4, Ficheros"),
+        array("titulo" => "ejercicio 5", "Enlace" => "<a class='alista'href='UD4/Ficheros/Ejercicio5/'>", "tags" => "ud4, Ficheros"),
     ),    
     "Proyectos Clase" => array(
         array("titulo" => "Irregulares", "Enlace" => "<a class='alista'href='Irregulares/index.php'>", "tags" => "formularios, Irregulares"),
