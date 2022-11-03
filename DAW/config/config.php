@@ -1,5 +1,4 @@
 <?php
-
 function obtener_estructura_directorios($ruta){
     // Se comprueba que realmente sea la ruta de un directorio
     if (is_dir($ruta)){
@@ -14,7 +13,7 @@ function obtener_estructura_directorios($ruta){
 
             // Se muestran todas las carpetas excepto ".", "..",".git","config", "css","lib","icon","js","img","fonts","assets" y "doc"
             if (is_dir($ruta_completa) && $carpeta!="." && $carpeta!=".." && $carpeta!=".git" && $carpeta!="config" && $carpeta!="css" && $carpeta!="lib" && $carpeta!="icon" && $carpeta!="js" && $carpeta!="img" && $carpeta!="fonts" && $carpeta!="assets" && $carpeta!="doc") {
-            echo "<li><a href='$ruta_completa'><span class='name'>$carpeta</span></a></li>";
+            echo "<li class='lilista'><a class ='alista'href='$ruta_completa'><span class='spanlista'>$carpeta</span></a></li>";
                 obtener_estructura_directorios($ruta_completa);
             }
         }
@@ -26,18 +25,4 @@ function obtener_estructura_directorios($ruta){
         echo "No es una ruta de directorio valida<br/>";
     }
 }
-obtener_estructura_directorios("DAW");
-
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
