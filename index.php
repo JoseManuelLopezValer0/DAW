@@ -29,10 +29,14 @@
         echo "<span class=name>$value1[Titulo]</span>";
         echo "</a>";
         echo "</li>";
-        echo" ";
+        echo " ";
     };
 
     ?>
 </body>
+
+<footer>
+    <p><a href="https://github.com/JoseManuelLopezValer0"><img src="img/git.png"></a></p>
+</footer>
 
 </html>
