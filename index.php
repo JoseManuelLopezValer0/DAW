@@ -34,7 +34,15 @@
 
     ?>
     <footer>
-        <a href="https://github.com/JoseManuelLopezValer0"><img src="img/git.png"></a> <a href="https://www.instagram.com/jmlg_a3d/"><img src="img/int.png"></a> <a href="https://twitter.com/L0p3zVal3r012"><img src="img/twt.png"></a>
+        <ul>
+            <a href="https://github.com/JoseManuelLopezValer0"><img src="img/git.png"></a>
+        </ul>
+        <ul>
+            <a href="https://www.instagram.com/jmlg_a3d/"><img src="img/int.png"></a>
+        </ul>
+        <ul>
+            <a href="https://twitter.com/L0p3zVal3r012"><img src="img/twt.png"></a>
+        </ul>
     </footer>
 </body>
 

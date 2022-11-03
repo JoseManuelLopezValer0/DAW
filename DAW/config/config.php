@@ -11,8 +11,8 @@ function obtener_estructura_directorios($ruta){
                 
             $ruta_completa = $ruta . "/" . $carpeta;
 
-            // Se muestran todas las carpetas excepto ".", "..",".git","config", "css","lib","icon","js","img","fonts","assets" y "doc"
-            if (is_dir($ruta_completa) && $carpeta!="." && $carpeta!=".." && $carpeta!=".git" && $carpeta!="config" && $carpeta!="css" && $carpeta!="lib" && $carpeta!="icon" && $carpeta!="js" && $carpeta!="img" && $carpeta!="fonts" && $carpeta!="assets" && $carpeta!="doc") {
+            // Se muestran todas las carpetas excepto ".", "..",".git","config", "css","lib","icon","js","img","fonts","assets", "data" y "doc"
+            if (is_dir($ruta_completa) && $carpeta!="." && $carpeta!=".." && $carpeta!=".git" && $carpeta!="config" && $carpeta!="css" && $carpeta!="lib" && $carpeta!="icon" && $carpeta!="js" && $carpeta!="img" && $carpeta!="fonts" && $carpeta!="assets" && $carpeta!="data" && $carpeta!="doc") {
             echo "<li class='lilista'><a class ='alista'href='$ruta_completa'><span class='spanlista'>$carpeta</span></a></li>";
                 obtener_estructura_directorios($ruta_completa);
             }
