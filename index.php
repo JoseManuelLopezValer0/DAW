@@ -33,10 +33,9 @@
     };
 
     ?>
+    <footer>
+        <a href="https://github.com/JoseManuelLopezValer0"><img src="img/git.png"></a> <a href="https://www.instagram.com/jmlg_a3d/"><img src="img/int.png"></a> <a href="https://twitter.com/L0p3zVal3r012"><img src="img/twt.png"></a>
+    </footer>
 </body>
-
-<footer>
-    <p><a href="https://github.com/JoseManuelLopezValer0"><img src="img/git.png"></a></p>
-</footer>
 
 </html>
