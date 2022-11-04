@@ -1,0 +1,33 @@
+﻿Título: ALUMNADO DE UNA UNIDAD
+Autor: Aplicación Séneca, CONSEJERÍA DE EDUCACIÓN Y DEPORTE, Junta de Andalucía
+Fecha de creación: 15/11/2021 - 08:57
+
+
+----------------------------------
+Alumno/a                          
+----------------------------------
+Ayala Cantador, Daniel            
+Baena Salas, Joaquín              
+Brito Guerrero, Manuel Rafael     
+Campos Gutiérrez, Francisco Javier
+Cebrián Muñoz, Javier             
+Chaves Hernández, Carlos           
+Díaz Rivas, Jesús                 
+Epifanio López, Javier            
+Fernández Rubio, Javier           
+García Fuentes, Álvaro            
+Garzón Zafra, Rubén Jesús         
+González Prófumo, Juan Manuel     
+Hidalgo Martín, Tomás             
+Hidalgo Risco, Carlos             
+Hidalgo Rivera, Laura             
+Ordoño Bernier, Virginia          
+Pérez Ruiz, David                        
+Rabadán Rivas, Alejandro          
+Ramírez Rivera, Rubén             
+Rosas Alcaraz, David              
+Solar Bueno, Manuel               
+Solís Tejada, Andrea              
+Tamajón Hernández, Guillermo      
+Vera Jurado, Sergio               
+Yuste Barrera, Rafael             
