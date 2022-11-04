@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Estructura ficheros, codigo</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>Configuración y Funcion</h1>
+        <pre class="line-numbers">
+<code class="Languaje-php">function obtener_estructura_directorios($ruta){
+    // Se comprueba que realmente sea la ruta de un directorio
+    if (is_dir($ruta)){
+        // Abre un gestor de directorios para la ruta indicada
+        $gestor = opendir($ruta);
+        echo "<'ul>";
+
+        // Recorre todos los elementos del directorio
+        while (($carpeta = readdir($gestor)) !== false)  {
+
+            $ruta_completa = $ruta . "/" . $carpeta;
+
+            // Se muestran todas las carpetas excepto ".", "..",".git","config", "css","lib","icon","js","img","fonts","assets", "data" y "doc"
+            if (is_dir($ruta_completa) && $carpeta!="." && $carpeta!=".." && $carpeta!=".git" && $carpeta!="config" && $carpeta!="css" && $carpeta!="lib" && $carpeta!="icon" && $carpeta!="js" && $carpeta!="img" && $carpeta!="fonts" && $carpeta!="assets" && $carpeta!="data" && $carpeta!="doc") {
+                echo <'li class='lilista'><'a class ='alista'href='$ruta_completa'><'span class='spanlista'>$carpeta<'/span><'/a><'/li>";
+                obtener_estructura_directorios($ruta_completa);
+            }
+        }
+
+        // Cierra el gestor de directorios
+        closedir($gestor);
+        echo "<'/ul>";
+    } else {
+        echo "No es una ruta de directorio valida<'br/>";
+    }
+}
+          </code>
+        </pre>
+      </article>
+      <article>
+        <h1>Mostrar carpetas</h1>
+        <pre class="line-numbers">
+<code class="Languaje-php">//incluimos el fichero de funciones
+include "/..Ruta al config.php../config.php";
+// llama a la funcion y le damos la ruta . que es la actual
+obtener_estructura_directorios(".");
+          </code>
+      </article>
+    </main>
+  </body>
+</html>
