@@ -1,7 +1,10 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <title>Estructura ficheros, código</title>
+    <link href="css/prism.css" rel="stylesheet"  />
+    <script src="lib/prism.js"></script>
   </head>
   <body>
     <main>
@@ -10,14 +13,12 @@
         <p>En esta sección se explica la estructura de ficheros y el código de la aplicación de config.php</p>
         <p>El siguiente código muestra la estructura del fichero de configuración en el cual se encuentra la función de exploración de las carpetas y el listado de estas.</p>
         <h4>config.php</h4>
-        <h3>Para usar el código borra todas las ' que encuentres, estan para poder mostralas en el html, si no las borras el código no funcionara</h3>
-        <pre class="line-numbers">
-<code class="Languaje-php">function obtener_estructura_directorios($ruta){
+        <pre class="line-numbers"><code class="language-php">function obtener_estructura_directorios($ruta){
     // Se comprueba que realmente sea la ruta de un directorio
     if (is_dir($ruta)){
         // Abre un gestor de directorios para la ruta indicada
         $gestor = opendir($ruta);
-        echo "<'ul>";
+        echo "&lt;ul>";
 
         // Recorre todos los elementos del directorio
         while (($carpeta = readdir($gestor)) !== false)  {
@@ -26,32 +27,30 @@
 
             // Se muestran todas las carpetas excepto ".", "..",".git","config", "css","lib","icon","js","img","fonts","assets", "data" y "doc"
             if (is_dir($ruta_completa) && $carpeta!="." && $carpeta!=".." && $carpeta!=".git" && $carpeta!="config" && $carpeta!="css" && $carpeta!="lib" && $carpeta!="icon" && $carpeta!="js" && $carpeta!="img" && $carpeta!="fonts" && $carpeta!="assets" && $carpeta!="data" && $carpeta!="doc") {
-                echo <'li class='lilista'><'a class ='alista'href='$ruta_completa'><'span class='spanlista'>$carpeta<'/span><'/a><'/li>";
+                echo &lt;li class='lilista'>&lt;a class ='alista'href='$ruta_completa'>&lt;span class='spanlista'>$carpeta&lt;/span>&lt;/a>&lt;/li>";
                 obtener_estructura_directorios($ruta_completa);
             }
         }
 
         // Cierra el gestor de directorios
         closedir($gestor);
-        echo "<'/ul>";
+        echo "&lt;/ul>";
     } else {
-        echo "No es una ruta de directorio valida<'br/>";
+        echo "No es una ruta de directorio valida&lt;br/>";
     }
 }
-          </code>
-        </pre>
+</code></pre>
       </article>
         <article>
           <h1>Ejecucion de la funcion</h1>
           <p>El siguiente código muestra como se ejecuta la función de exploración de las carpetas y el listado de estas.</p>
         <h1>Mostrar carpetas</h1>
-        <pre class="line-numbers">
-<code class="Languaje-php">//incluimos el fichero de funciones
+        <pre class="line-numbers"><code class="language-php">//incluimos el fichero de funciones
 include "/..Ruta al config.php../config.php";
 // llama a la funcion y le damos la ruta . que es la actual
 obtener_estructura_directorios(".");
-          </code>
-      </article>
+</code></pre>
+        </article>
     </main>
   </body>
 </html>
