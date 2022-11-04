@@ -10,40 +10,42 @@
 </head>
 
 <body>
+    <main>
+        <h1>Inicio</h1>
+        <p>Pagina de Jose Manuel Lopez Valero</p>
+        <br>
+        <?php
+        // mostramos la estructura de directorios
+        function directorios()
+        {
+            $ruta = "DAW";
+            // Se comprueba que realmente sea la ruta de un directorio
+            if (is_dir($ruta)) {
+                // Abre un gestor de directorios para la ruta indicada
+                $gestor = opendir($ruta);
+                // Recorre todos los elementos del directorio del directorio actual
+                while (($carpeta = readdir($gestor)) !== false) {
+                    $ruta_completa = $ruta . "/" . $carpeta;
+                    // Se muestran todas las carpetas excepto ".", "..",".git","config", "css","lib","icon","js","img","fonts","assets", "data" y "doc"
+                    if (is_dir($ruta_completa) && $carpeta != "." && $carpeta != ".." && $carpeta != ".git" && $carpeta != "config" && $carpeta != "css" && $carpeta != "lib" && $carpeta != "icon" && $carpeta != "js" && $carpeta != "img" && $carpeta != "fonts" && $carpeta != "assets" && $carpeta != "data" && $carpeta != "doc") {
+                        echo "<li class='lilista'><a class ='alista'href='$ruta_completa'><span class='spanlista'>$carpeta</span></a></li>";
+                    }
+                }
 
-    <h1>Inicio</h1>
-    <p>Pagina de Jose Manuel Lopez Valero</p>
-
-    <?php
-    $aAsignaturas = array(
-        "DAW" => array("Titulo" => "DAW", "Enlace" => "<a href='/DAW/DAW/'>"),
-        "DIW" => array("Titulo" => "DIW", "Enlace" => "<a href='/DAW/DIW/'>"),
-        "DWEC" => array("Titulo" => "DWEC", "Enlace" => "<a href='/DAW/DWEC/'>"),
-        "DWES" => array("Titulo" => "DWES", "Enlace" => "<a href='/DAW/DWES/'>"),
-        "HLC" => array("Titulo" => "HLC", "Enlace" => "<a href='/DAW/HLC/'>"),
-    );
-
-    foreach ($aAsignaturas as $i => $value1) {
-        echo "<li>";
-        echo $value1["Enlace"];
-        echo "<span class=name>$value1[Titulo]</span>";
-        echo "</a>";
-        echo "</li>";
-        echo " ";
-    };
-
-    ?>
-    <footer>
-        <ul>
-            <a href="https://github.com/JoseManuelLopezValer0"><img src="img/git.png"></a>
-        </ul>
-        <ul>
-            <a href="https://www.instagram.com/jmlg_a3d/"><img src="img/int.png"></a>
-        </ul>
-        <ul>
-            <a href="https://twitter.com/L0p3zVal3r012"><img src="img/twt.png"></a>
-        </ul>
-    </footer>
+                // Cierra el gestor de directorios
+                closedir($gestor);
+            } else {
+                echo "No es una ruta de directorio valida<br/>";
+            }
+        }
+        directorios();
+        ?>
+    </main>
+    <div class="social">
+        <a href="https://github.com/JoseManuelLopezValer0"><img src="img/git.png"></a>
+        <a href="https://www.instagram.com/jmlg_a3d/"><img src="img/int.png"></a>
+        <a href="https://twitter.com/L0p3zVal3r012"><img src="img/twt.png"></a>
+    </div>
 </body>
 
 </html>
