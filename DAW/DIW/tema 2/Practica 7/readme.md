@@ -3,7 +3,6 @@
 ## Jose
 | Value                                     | Description                                                        |
 | ----------------------------------------- | ------------------------------------------------------------------ |
-| matrix(n,n,n,n,n,n)                       | Defines a 2D transformation, using a matrix of six values          |
 | rotate(angle)                             | Defines a 2D rotation, the angle is specified in the parameter     |
 | rotateX(angle)                            | Defines a 3D rotation along the X-axis                             |
 | rotateY(angle)                            | Defines a 3D rotation along the Y-axis                             |
@@ -11,7 +10,8 @@
 | skew(x-angle,y-angle)                     | Defines a 2D skew transformation along the X- and the Y-axis       |
 | skewX(angle)                              | Defines a 2D skew transformation along the X-axis                  |
 | skewY(angle)                              | Defines a 2D skew transformation along the Y-axis                  |
-| perspective(n)                            | Defines a perspective view for a 3D transformed element            |
+<!-- | matrix(n,n,n,n,n,n)                       | Defines a 2D transformation, using a matrix of six values          |
+| perspective(n)                            | Defines a perspective view for a 3D transformed element            | -->
 
 ## Maria
 | Value                                     | Description                                                        |
