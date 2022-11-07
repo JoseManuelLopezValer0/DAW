@@ -36,4 +36,3 @@ echo "<br>";
 
 echo "Index.php: <a href='https://github.com/JoseManuelLopezValer0/DAW/blob/main/DAW/DWES/UD5/POO/Clase/Contador/index.php'>index.php</a><br>";
 echo "Contador.php: <a href='https://github.com/JoseManuelLopezValer0/DAW/blob/main/DAW/DWES/UD5/POO/Clase/Contador/lib/contador.php'>contador.php</a><br>";
-?>
