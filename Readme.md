@@ -12,4 +12,4 @@ Servidor de Jose Manuel Lopez Valero para el Grado Superior de Desarrollo de Apl
 - [Horas de libre configuracion](https://github.com/JoseManuelLopezValer0/DAW/tree/main/DAW/HLC)
 
 ### Diseño del metodo de indexzacion de las paginas de la web 
-- [Enlace a la pagina de configuracion](https://github.com/JoseManuelLopezValer0/DAW/tree/main/DAW/config)
+- [Enlace a la pagina de configuracion](https://github.com/JoseManuelLopezValer0/DAW/wiki/Configuraci%C3%B3n-Indexzacion)
