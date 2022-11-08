@@ -20,7 +20,9 @@ config.php
 
                 $ruta_completa = $ruta . "/" . $carpeta;
 
-                // Se muestran todas las carpetas excepto ".", "..",".git","config","css","lib","icon","js","img","fonts","assets","data","doc,"app" y "vendor" 
+                /** Se muestran todas las carpetas excepto:
+                * ".", "..",".git","config","css","lib","icon","js","img","fonts","assets","data","doc,"app" y "vendor"
+                */
                 if (
                     is_dir($ruta_completa)
                     && $carpeta != "."
@@ -39,7 +41,11 @@ config.php
                     && $carpeta != "app"
                     && $carpeta != "vendor"
                 ) {
-                    echo "<li class='lilista'><a class ='alista'href='$ruta_completa'><span class='spanlista'>$carpeta</span></a></li>";
+                    echo "<li class='lilista'>
+                        <a class ='alista'href='$ruta_completa'>
+                            <span class='spanlista'>$carpeta</span>
+                        </a>
+                    </li>";
                     obtener_estructura_directorios($ruta_completa);
                 }
             }
