@@ -40,6 +40,9 @@
         }
         directorios();
         ?>
+        <footer>
+        <h3>Para saber como es la indexzacion de los directorios, mira el codigo en <a href="DAW/config/">config</a></h3>
+        </footer>
     </main>
     <div class="social">
         <a href="https://github.com/JoseManuelLopezValer0"><img src="img/git.png"></a>

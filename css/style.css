@@ -74,6 +74,9 @@ h1 {
   line-height: normal;
   color: rgb(255, 255, 255);
 }
+h3 {
+  color: rgb(255, 255, 255);
+}
 p {
   line-height: 1.2em;
   text-indent: 0;
@@ -119,4 +122,14 @@ div {
   height: 205px;
   /*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
   margin-top: -100px;
+}
+
+.social a{
+  color: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #000;
 }

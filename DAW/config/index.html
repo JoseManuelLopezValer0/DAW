@@ -13,21 +13,40 @@
         <p>En esta sección se explica la estructura de ficheros y el código de la aplicación de config.php</p>
         <p>El siguiente código muestra la estructura del fichero de configuración en el cual se encuentra la función de exploración de las carpetas y el listado de estas.</p>
         <h4>config.php</h4>
-        <pre class="line-numbers"><code class="language-php">function obtener_estructura_directorios($ruta){
+        <pre class="line-numbers"><code class="language-php">&lt;?php
+function obtener_estructura_directorios($ruta)
+{
     // Se comprueba que realmente sea la ruta de un directorio
-    if (is_dir($ruta)){
+    if (is_dir($ruta)) {
         // Abre un gestor de directorios para la ruta indicada
         $gestor = opendir($ruta);
         echo "&lt;ul>";
 
         // Recorre todos los elementos del directorio
-        while (($carpeta = readdir($gestor)) !== false)  {
+        while (($carpeta = readdir($gestor)) !== false) {
 
             $ruta_completa = $ruta . "/" . $carpeta;
 
-            // Se muestran todas las carpetas excepto ".", "..",".git","config", "css","lib","icon","js","img","fonts","assets", "data" y "doc"
-            if (is_dir($ruta_completa) && $carpeta!="." && $carpeta!=".." && $carpeta!=".git" && $carpeta!="config" && $carpeta!="css" && $carpeta!="lib" && $carpeta!="icon" && $carpeta!="js" && $carpeta!="img" && $carpeta!="fonts" && $carpeta!="assets" && $carpeta!="data" && $carpeta!="doc") {
-                echo &lt;li class='lilista'>&lt;a class ='alista'href='$ruta_completa'>&lt;span class='spanlista'>$carpeta&lt;/span>&lt;/a>&lt;/li>";
+            // Se muestran todas las carpetas excepto ".", "..",".git","config","css","lib","icon","js","img","fonts","assets","data","doc,"app" y "vendor" 
+            if (
+                is_dir($ruta_completa)
+                && $carpeta != "."
+                && $carpeta != ".."
+                && $carpeta != ".git"
+                && $carpeta != "config"
+                && $carpeta != "css"
+                && $carpeta != "lib"
+                && $carpeta != "icon"
+                && $carpeta != "js"
+                && $carpeta != "img"
+                && $carpeta != "fonts"
+                && $carpeta != "assets"
+                && $carpeta != "data"
+                && $carpeta != "doc"
+                && $carpeta != "app"
+                && $carpeta != "vendor"
+            ) {
+                echo "&lt;li class='lilista'>&lt;a class ='alista'href='$ruta_completa'>&lt;span class='spanlista'>$carpeta&lt;/span>&lt;/a>&lt;/li>";
                 obtener_estructura_directorios($ruta_completa);
             }
         }
@@ -36,9 +55,10 @@
         closedir($gestor);
         echo "&lt;/ul>";
     } else {
-        echo "No es una ruta de directorio valida&lt;br/>";
+        echo "No es una ruta de directorio valida<br/>";
     }
 }
+
 </code></pre>
       </article>
         <article>
