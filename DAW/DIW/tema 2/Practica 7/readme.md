@@ -10,8 +10,10 @@
 | skew(x-angle,y-angle)                     | Defines a 2D skew transformation along the X- and the Y-axis       |
 | skewX(angle)                              | Defines a 2D skew transformation along the X-axis                  |
 | skewY(angle)                              | Defines a 2D skew transformation along the Y-axis                  |
-<!-- | matrix(n,n,n,n,n,n)                       | Defines a 2D transformation, using a matrix of six values          |
-| perspective(n)                            | Defines a perspective view for a 3D transformed element            | -->
+<!-- 
+| matrix(n,n,n,n,n,n)                       | Defines a 2D transformation, using a matrix of six values          |
+| perspective(n)                            | Defines a perspective view for a 3D transformed element            |
+ -->
 
 ## Maria
 | Value                                     | Description                                                        |
