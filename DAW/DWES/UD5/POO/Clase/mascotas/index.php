@@ -8,8 +8,10 @@
  * @version: 1.0
  */
 
-require_once 'app/models/Perro.php';
-require_once 'app/models/Persona.php';
+// require_once 'app/models/Perro.php';
+// require_once 'app/models/Persona.php';
+
+require_once 'vendor/autoload.php';
 
 use App\Models\Perro;
 use App\Models\Persona;
