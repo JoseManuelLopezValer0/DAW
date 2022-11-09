@@ -1,5 +1,5 @@
 const numero = 123456.789;
-console.log(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(number));
+console.log(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(numero));
 // Salida "123.456,79 €"
 // — — — — — — — —
 var numero2 = 123456.789;

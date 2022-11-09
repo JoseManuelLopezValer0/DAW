@@ -1,5 +1,6 @@
 //Si quieres guardar la fecha de navidad de 2019:
-let navidad2019 = new Date('12-25-2019');
+let navidad2019 = new Date('2019');
+new Date('2
 console.log(navidad2019); // Devuelve Wed Dec 25 2019 00:00:00 GMT+0100 (hora estándar de Europa central)
 
 //Si quieres saber qué día fue navidad en 2019:
