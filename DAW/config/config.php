@@ -1,18 +1,15 @@
 <?php
 function obtener_estructura_directorios($ruta)
 {
-    // Se comprueba que realmente sea la ruta de un directorio
+    echo "Directorio: $ruta <BR>";
     if (is_dir($ruta)) {
-        // Abre un gestor de directorios para la ruta indicada
         $gestor = opendir($ruta);
         echo "<ul>";
 
-        // Recorre todos los elementos del directorio
         while (($carpeta = readdir($gestor)) !== false) {
 
             $ruta_completa = $ruta . "/" . $carpeta;
 
-            // Se muestran todas las carpetas excepto ".", "..",".git","config", "css","lib","icon","js","img","fonts","assets", "data", "doc, "app" y "vendor" 
             if (
                 is_dir($ruta_completa)
                 && $carpeta != "."
@@ -36,7 +33,6 @@ function obtener_estructura_directorios($ruta)
             }
         }
 
-        // Cierra el gestor de directorios
         closedir($gestor);
         echo "</ul>";
     } else {

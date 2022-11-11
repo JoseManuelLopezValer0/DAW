@@ -22,8 +22,8 @@
 
     <hr>
     <?php
-    include "/Users/lovaj/2022-2023/Servidor/DAW/config/config.php";
-obtener_estructura_directorios(".");
+    include "../../DAW/config/config.php";
+    obtener_estructura_directorios(".");
     ?>
 </body>
 

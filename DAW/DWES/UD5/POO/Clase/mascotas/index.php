@@ -13,8 +13,8 @@
 
 require_once 'vendor/autoload.php';
 
-use App\Models\Perro;
-use App\Models\Persona;
+use app\Models\Perro;
+use app\Models\Persona;
 
 $perro = new Perro("tana", "Negro");
 echo "Dame la pata: ";
