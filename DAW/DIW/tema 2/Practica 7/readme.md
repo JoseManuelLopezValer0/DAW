@@ -9,7 +9,7 @@
 | rotateX(angle)                            | Defines a 3D rotation along the X-axis                             |
 | rotateY(angle)                            | Defines a 3D rotation along the Y-axis                             |
 | rotateZ(angle)                            | Defines a 3D rotation along the Z-axis                             |
-| tran  slate(x,y)                          | Defines a 2D translation                                           |
+| translate(x,y)                            | Defines a 2D translation                                           |
 | translateX(x)                             | Defines a translation, using only the value for the X-axis         |
 | translateY(y)                             | Defines a translation, using only the value for the Y-axis         |
 | translateZ(z)                             | Defines a 3D translation, using only the value for the Z-axis      |
