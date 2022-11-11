@@ -3,15 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <title>Estructura ficheros, código</title>
-    <link href="css/prism.css" rel="stylesheet"  />
+    <link href="css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="lib/prism.js"></script>
   </head>
   <body>
+    <header class="super-cabecera">
+      <nav>
+        <ul>
+          <li>
+            <a href="../../">
+              <i class="fa fa-fw fa-home fa-5x"></i>
+              <span class="borde"></span>
+              <span class="texto">VOLVER</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <article>
         <h1>Configuración y Funcion</h1>
-        <p>En esta sección se explica la estructura de ficheros y el código de la aplicación de config.php</p>
-        <p>El siguiente código muestra la estructura del fichero de configuración en el cual se encuentra la función de exploración de las carpetas y el listado de estas.</p>
+        <p>
+          En esta sección se explica la estructura de ficheros y el código de la
+          aplicación de config.php
+        </p>
+        <p>
+          El siguiente código muestra la estructura del fichero de configuración
+          en el cual se encuentra la función de exploración de las carpetas y el
+          listado de estas.
+        </p>
         <h4>config.php</h4>
         <pre class="line-numbers"><code class="language-php">&lt;?php
 function obtener_estructura_directorios($ruta)
@@ -61,16 +82,21 @@ function obtener_estructura_directorios($ruta)
 
 </code></pre>
       </article>
-        <article>
-          <h1>Ejecucion de la funcion</h1>
-          <p>El siguiente código muestra como se ejecuta la función de exploración de las carpetas y el listado de estas.</p>
+      <article>
+        <h1>Ejecucion de la funcion</h1>
+        <p>
+          El siguiente código muestra como se ejecuta la función de exploración
+          de las carpetas y el listado de estas.
+        </p>
         <h1>Mostrar carpetas</h1>
-        <pre class="line-numbers"><code class="language-php">//incluimos el fichero de funciones
+        <pre
+          class="line-numbers"
+        ><code class="language-php">//incluimos el fichero de funciones
 include "/..Ruta al config.php../config.php";
 // llama a la funcion y le damos la ruta . que es la actual
 obtener_estructura_directorios(".");
 </code></pre>
-        </article>
+      </article>
     </main>
   </body>
 </html>
