@@ -8,8 +8,7 @@
  * @Version: 1.0
  */
 
- //Definimos las constantes
 
-define('filas', 10);
-define('columnas', 10);
-define('minas', 10);
+ define('filas', 8);
+define('columnas', 8);
+define('minas', 15);
