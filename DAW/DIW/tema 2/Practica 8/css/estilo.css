@@ -2,6 +2,8 @@ ul > li{
     list-style: none;
     width: 100px;
     height: 50px;
+    color: white;
+    background-color: rgb(7, 146, 151);
     display: inline-block;
-
+    text-align: center;
 }
