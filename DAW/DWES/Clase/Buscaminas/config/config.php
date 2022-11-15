@@ -11,4 +11,4 @@
 
  define('filas', 8);
 define('columnas', 8);
-define('minas', 15);
+define('minas', 10);

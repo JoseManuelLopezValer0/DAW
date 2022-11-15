@@ -71,9 +71,10 @@ function mostrarTablero($tablero)
     for ($i = 0; $i < $filas; $i++) {
         echo "<tr>";
         for ($j = 0; $j < $columnas; $j++) {
-            echo "<td><input type='button' name='" . $tablero[$i][$j] . "' value='" . $tablero[$i][$j] . "'></td>";
+            echo "<td><a name='" . $tablero[$i][$j] . "'href=''> " . $tablero[$i][$j] . " </a></td>";
         }
         echo "</tr>";
     }
     echo "</table>";
 }
+
