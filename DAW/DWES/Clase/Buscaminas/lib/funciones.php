@@ -63,18 +63,23 @@ function ponerNumeros($tablero)
     }
     return $tablero;
 }
-function mostrarTablero($tablero)
+
+function click($tablero, $fila, $columna)
 {
     $filas = count($tablero);
     $columnas = count($tablero[0]);
-    echo "<table>";
-    for ($i = 0; $i < $filas; $i++) {
-        echo "<tr>";
-        for ($j = 0; $j < $columnas; $j++) {
-            echo "<td><a name='" . $tablero[$i][$j] . "'href=''> " . $tablero[$i][$j] . " </a></td>";
+    if ($tablero[$fila][$columna] != 9) {
+        if ($tablero[$fila][$columna] == 0) {
+            for ($i = $fila - 1; $i <= $fila + 1; $i++) {
+                for ($j = $columna - 1; $j <= $columna + 1; $j++) {
+                    if ($i >= 0 && $i < $filas && $j >= 0 && $j < $columnas) {
+                        if ($tablero[$i][$j] != 9 && $tablero[$i][$j] != 10) {
+                            $tablero = click($tablero, $i, $j);
+                        }
+                    }
+                }
+            }
         }
-        echo "</tr>";
     }
-    echo "</table>";
+    return $tablero;
 }
-
