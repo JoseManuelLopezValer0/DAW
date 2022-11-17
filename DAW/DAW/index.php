@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Desarrollo interfaces web - Jose Manuel Lopez Valero</title>
+    <title>Despliege de aplicaciones multiplataforma - Jose Manuel Lopez Valero</title>
     <link rel="stylesheet" href="css/style.css">
     </head>
 

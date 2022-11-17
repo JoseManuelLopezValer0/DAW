@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4.3 Gestionando volúmenes y obteniendo información | 1.Introducción. Docker para desarrolladores </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Juan Diego Pérez Jiménez para la Consejería de Educación" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-101"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">1.Introducción. Docker para desarrolladores</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Docker para desarrolladores</a></li>
+   <li><a href="1introduccin_docker_para_desarrolladores.html" class="daddy">1.Introducción. Docker para desarrolladores</a>
+   <ul class="other-section">
+      <li><a href="11_qu_es_docker.html" class="no-ch">1.1 ¿Qué es Docker?</a></li>
+      <li><a href="12_instalacin_de_docker.html" class="no-ch">1.2 Instalación de Docker</a></li>
+      <li><a href="13_hola_mundo.html" class="no-ch">1.3 Hola Mundo</a></li>
+      <li><a href="14_qu_es_docker_hub.html" class="no-ch">1.4 ¿Qué es Docker Hub?</a></li>
+      <li><a href="15_aplicaciones_a_la_docencia.html" class="no-ch">1.5 Aplicaciones a la docencia</a></li>
+      <li><a href="16_estructura_del_resto_del_curso.html" class="no-ch">1.6 Estructura del resto del curso</a></li>
+      <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="2_ejecutando_y_gestionando_contenedores_docker.html" class="daddy">2. Ejecutando y gestionando contenedores Docker</a>
+   <ul class="other-section">
+      <li><a href="21_ejecutando_contenedores.html" class="no-ch">2.1 Ejecutando contenedores.</a></li>
+      <li><a href="22_los_flags_it.html" class="no-ch">2.2 Los flags -it</a></li>
+      <li><a href="23_ejecucin_de_servicios_puertos_y_variables_de_entorno.html" class="no-ch">2.3 Ejecución de servicios. Puertos y variables de entorno</a></li>
+      <li><a href="24_asignando_nombre_a_los_contenedores.html" class="no-ch">2.4 Asignando nombre a los contenedores</a></li>
+      <li><a href="25_ejecutar_rdenes_en_los_contenedores.html" class="no-ch">2.5 Ejecutar órdenes en los contenedores.</a></li>
+      <li><a href="26_obtencin_de_informacin_de_los_contenedores.html" class="no-ch">2.6 Obtención de información de los contenedores</a></li>
+      <li><a href="27_gestin_de_contenedores.html" class="no-ch">2.7 Gestión de contenedores</a></li>
+      <li><a href="28_vdeo_resumen.html" class="no-ch">2.8. Vídeo resumen</a></li>
+      <li><a href="crditos0.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="3_gestin_de_imgenes_docker.html" class="daddy">3. Gestión de imágenes docker</a>
+   <ul class="other-section">
+      <li><a href="31_descarga_de_imgenes.html" class="no-ch">3.1 Descarga de imágenes</a></li>
+      <li><a href="32_borrado_de_imgenes.html" class="no-ch">3.2 Borrado de imágenes</a></li>
+      <li><a href="33_obteniendo_informacin_de_las_imgenes.html" class="no-ch">3.3 Obteniendo información de las imágenes</a></li>
+      <li><a href="34_ms_comandos_relacionados_con_imgenes.html" class="no-ch">3.4 Más comandos relacionados con imágenes</a></li>
+      <li><a href="34_vdeo_resumen.html" class="no-ch">3.4 Vídeo resumen</a></li>
+      <li><a href="crditos1.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="4_persistencia_en_docker.html" class="current-page-parent daddy">4. Persistencia en docker</a>
+   <ul>
+      <li><a href="41_los_datos_en_los_contenedores.html" class="no-ch">4.1 Los datos en los contenedores</a></li>
+      <li><a href="42_volmenes_y_bind_mount.html" class="no-ch">4.2 Volúmenes y Bind Mount</a></li>
+      <li id="active"><a href="43_gestionando_volmenes_y_obteniendo_informacin.html" class="active no-ch">4.3 Gestionando volúmenes y obteniendo información</a></li>
+      <li><a href="44_asociando_almacenamiento_a_los_contenedores.html" class="no-ch">4.4 Asociando almacenamiento a los contenedores</a></li>
+      <li><a href="45_herramientas_docker_en_visual_studio_code.html" class="no-ch">4.5 Herramientas Docker en Visual Studio Code</a></li>
+      <li><a href="46_uso_de_los_volmenes_y_bind_mounts.html" class="no-ch">4.6 Uso de los volúmenes y bind mounts</a></li>
+      <li><a href="47_bind_mounts_para_desarrollo_depurando_aplicaciones.html" class="no-ch">4.7 Bind mounts para desarrollo. Depurando aplicaciones</a></li>
+      <li><a href="crditos2.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="5_redes_en_docker.html" class="daddy">5. Redes en docker</a>
+   <ul class="other-section">
+      <li><a href="51_tipos_de_redes_en_docker.html" class="no-ch">5.1 Tipos de redes en Docker</a></li>
+      <li><a href="52_gestionando_redes.html" class="no-ch">5.2 Gestionando redes</a></li>
+      <li><a href="53_obteniendo_informacin_de_las_redes.html" class="no-ch">5.3 Obteniendo información de las redes</a></li>
+      <li><a href="54_asociando_redes_a_contenedores.html" class="no-ch">5.4 Asociando redes a contenedores</a></li>
+      <li><a href="55_iptables_en_contenedores.html" class="no-ch">5.5 Iptables en contenedores</a></li>
+      <li><a href="56_vdeo_resumen.html" class="no-ch">5.6 Vídeo resumen</a></li>
+      <li><a href="crditos3.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="6_construyendo_mis_propias_imgenes.html" class="daddy">6. Construyendo mis propias imágenes</a>
+   <ul class="other-section">
+      <li><a href="61_desde_un_contenedor_en_ejecucin.html" class="no-ch">6.1 Desde un contenedor en ejecución</a></li>
+      <li><a href="62_el_fichero_dockerfile.html" class="daddy">6.2 El fichero Dockerfile</a>
+      <ul class="other-section">
+         <li><a href="621_resumen_de_comandos_dockerfile.html" class="no-ch">6.2.1 Resumen de comandos Dockerfile</a></li>
+         <li><a href="622_ejemplos_de_ficheros_dockerfile.html" class="no-ch">6.2.2 Ejemplos de ficheros Dockerfile</a></li>
+         <li><a href="623_buenas_prcticas_para_ficheros_dockerfile.html" class="daddy">6.2.3 Buenas prácticas para ficheros Dockerfile</a>
+         <ul class="other-section">
+            <li><a href="__.html" class="no-ch">?????</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="63_conectando_github_con_dockerhub.html" class="no-ch">6.3 Conectando Github con DockerHub</a></li>
+      <li><a href="crditos4.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="7_aplicaciones_multicapa_con_dockercompose.html" class="daddy">7. Aplicaciones multicapa con docker-compose</a>
+   <ul class="other-section">
+      <li><a href="71_instalacin_de_dockercompose.html" class="no-ch">7.1 Instalación de docker-compose</a></li>
+      <li><a href="72_el_archivo_dockercomposeyml.html" class="no-ch">7.2 El archivo docker-compose.yml</a></li>
+      <li><a href="73_la_orden_dockercompose.html" class="no-ch">7.3 La orden docker-compose</a></li>
+      <li><a href="74_aplicaciones_a_la_docencia_entornos_de_prcticas.html" class="no-ch">7.4 Aplicaciones a la docencia. Entornos de prácticas.</a></li>
+      <li><a href="75_publicacin_de_archivos_dockercompose_en_dockerhub.html" class="no-ch">7.5 Publicación de archivos docker-compose en DockerHub</a></li>
+      <li><a href="76_recursos_utilizados.html" class="no-ch">7.6 Recursos utilizados</a></li>
+      <li><a href="crditos5.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="8_asegurando_contenedores.html" class="daddy">8. Asegurando contenedores</a>
+   <ul class="other-section">
+      <li><a href="81_seguridad_en_las_imgenes.html" class="no-ch">8.1 Seguridad en las imágenes</a></li>
+      <li><a href="82_seguridad_en_el_proceso_de_build.html" class="no-ch">8.2 Seguridad en el proceso de build</a></li>
+      <li><a href="83_seguridad_al_arrancar_los_contenedores.html" class="no-ch">8.3 Seguridad al arrancar los contenedores</a></li>
+      <li><a href="84_video_resumen.html" class="no-ch">8.4 Video Resumen</a></li>
+      <li><a href="crditos6.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="9_integracin_y_despliegue_continuo_con_jenkins_y_docker.html" class="daddy">9. Integración y despliegue continuo con Jenkins y docker</a>
+   <ul class="other-section">
+      <li><a href="91_conceptos_importantes.html" class="no-ch">9.1 Conceptos importantes</a></li>
+      <li><a href="92_ejemplo_prctico.html" class="no-ch">9.2 Ejemplo práctico</a></li>
+      <li><a href="recursos.html" class="no-ch">Recursos</a></li>
+      <li><a href="crditos7.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="42_volmenes_y_bind_mount.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="44_asociando_almacenamiento_a_los_contenedores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4.3 Gestionando volúmenes y obteniendo información</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id245">
+<div class="iDevice emphasis0" >
+<div id="ta245_114_2" class="block iDevice_content">
+<div class="exe-text"><p>En el apartado anterior presentamos las dos opciones para la persistencia de datos con docker que consideramos que eran de mayor interés para el desarrollo de software: volúmenes y bind mounts. En este apartado nos centraremos  en los volúmenes y en las operaciones básicas que podemos hacer con ellos mediante la orden docker volume. Estas operaciones son:</p>
+<ul>
+<li><strong>Creación</strong> de los volúmenes.</li>
+<li><strong>Eliminación</strong> de los volúmenes.</li>
+<li><strong>Obtención de información</strong> de los volúmenes.</li>
+</ul>
+<p>En el apartado siguiente veremos  como, una vez hayamos definido estos volúmenes, podremos usarlos en nuestros contenedores.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_conocer" id="id246">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">CREACIÓN DE VOLÚMENES</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta246_113_2" class="block iDevice_content">
+<div class="exe-text"><p>Para la creación de volúmenes vamos a usar la orden <strong>docker volume create </strong>que tiene la siguiente estructura:</p>
+<figure class="exe-figure exe-image position-center license-pd" style="width: 500px; text-align: center;"><img src="dockerVolumeCreate.png" alt="Creación de volúmenes. Estructura de la orden docker volume create" title="Creación de volúmenes. Estructura de la orden docker volume create" width="500" height="335" />
+<figcaption class="figcaption"><a href="http://github.com/pekechis" target="_blank" class="author" rel="noopener">Juan Diego Pérez Jiménez</a>. <span class="title"><em>Creación de volúmenes. Estructura de la orden docker volume create</em></span> <span class="license"><span class="sep">(</span><span>Dominio público</span><span class="sep">)</span></span></figcaption>
+</figure>
+<p>Entre las opciones que podemos incluir a la hora de crear los volúmenes están:<br /><br /></p>
+<ul>
+<li><strong>--driver o -d </strong>para especificar el driver elegido para el volumen. Si no especificamos nada el driver utilizado es el <strong><em>local</em></strong> que es el que nos interesa desde el punto de vista de desarrollo porque desarrollamos en nuestra máquina. Al ser Linux en mi caso ese driver local es<strong> overlay2</strong> pero existen otras posibilidades como <em><strong>aufs, btrfs, zfs, devicemapper o vfs. </strong></em>Si estamos interesados en conocer al detalle cada uno de ellos <a href="https://docs.docker.com/storage/storagedriver/" target="_blank" rel="noopener">aquí</a> tenemos más información.</li>
+<li><strong>--label </strong>para especificar los metadatos del volumen mediante parejas clave-valor.</li>
+<li><strong>--opt o -o </strong>para especificar opciones relativas al driver elegido. Si son opciones relativas al sistema de ficheros  puedo usar una sintaxis similar a las opciones de la orden mount.</li>
+<li><strong>--name </strong>para especificar un nombre para el volumen. Es una alternativa a especificarlo al final que es la  forma que está descrita en la imagen superior.</li>
+</ul>
+<p>Vamos a ilustrar este funcionamiento con varios ejemplos:</p>
+<table style="width: 100%; background-color: #000000;" border="0">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-size: 14pt; color: #ff0000;"># Creación de un volumen llamado datos (driver local sin opciones)<br /></span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume create data</span></p>
+<p><span style="font-size: 14pt; color: #00ff00;"><span style="color: #ff0000;"># Creación de un volumen data especificando el driver local</span> </span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume create -d local data</span></p>
+<p><span style="font-size: 14pt; color: #ff0000;"># Creación de un volumen llamando web añadiendo varios metadatos</span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume create --label servicio=http --label server=apache Web</span><span style="font-size: 14pt; color: #00ff00;"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Aunque queda fuera del alcance de los objetivos de este curso es importante destacar que mediante otras opciones podríamos indicar que los volúmenes estén en otros dispositivos, en montajes nfs e incluso en servicios de almacenamiento en nube públicas o privadas.<br /></strong></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_conocer" id="id247">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">ELIMINACIÓN DE VOLÚMENES</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta247_114_2" class="block iDevice_content">
+<div class="exe-text"><p>Para la eliminación de los volúmenes creados tenemos dos opciones:</p>
+<ul>
+<li><strong>docker volume rm</strong> para eliminar un volumen en concreto (por nombre o por id).</li>
+<li><strong>docker volumen prune</strong> para eliminar los volúmenes que no están siendo usados por ningún contenedor.</li>
+</ul>
+<p>A continuación vamos a ver una lista de ejemplos para ilustrar el funcionamiento de ambos:</p>
+<table style="width: 100%; background-color: #000000;" border="0">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-size: 14pt; color: #ff0000;"># Borrar un volumen por nombre<br /></span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume rm nombre_volumen<br /></span></p>
+<p><span style="font-size: 14pt; color: #ff0000;"># Borrar un volumen por ID</span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume rm a5175dc955cfcf7f118f72dd37291592a69915f82a49f62f83666ddc81f67441</span></p>
+<p><span style="font-size: 14pt; color: #ff0000;"># Borrar dos volúmenes de una sola vez</span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume rm nombre_volumen1 nombre_volumen2</span></p>
+<p><span style="font-size: 14pt; color: #ff0000;"># Forzar el borrado de un volumen -f o --force</span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume rm -f nombre_volumen</span></p>
+<p><span style="font-size: 14pt; color: #ff0000;"># Borrar todos los volúmenes que no tengan contenedores  asociados</span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume prune</span></p>
+<p><span style="font-size: 14pt; color: #00ff00;"><span style="color: #ff0000;"># Borrar todos los volúmenes que no tengan contenedores  asociados sin pedir confirmación (-f o --force)</span><br /></span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume prune -f </span></p>
+<p><span style="font-size: 14pt; color: #ff0000;"># Borrar todos los volúmenes sin usar que contengan cierto valor de etiqueta (--filter)</span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume prune --filter label=valor</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>NOTA: NO SE PUEDEN ELIMINAR VOLÚMENES EN USO POR CONTENEDORES</strong>, salvo que usemos el flag -f o --force y no es algo recomendado.</p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_conocer" id="id248">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">OBTENCIÓN DE INFORMACIÓN DE LOS VOLÚMENES</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta248_115_2" class="block iDevice_content">
+<div class="exe-text"><p>Si queremos obtener información de los volúmenes que hemos creado podemos hacerlo de dos formas:</p>
+<ul>
+<li>Usando <strong>docker volume ls </strong>que nos proporciona una lista de los volúmenes creados y algo de información adicional.</li>
+<li>Usando <strong>docker volume inspect </strong>que nos dará una información mucho más detallada de el volumen que hayamos elegido.</li>
+</ul>
+<p><span style="text-decoration: underline;"><strong>LISTA DE VOLÚMENES DEL SISTEMA</strong></span></p>
+<p>Si ejecutamos la siguiente orden:</p>
+<table style="width: 100%; background-color: #000000;" border="0">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-size: 14pt; color: #ff0000;"># Listar los volúmenes creados en el sistema</span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume ls</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Obtendremos una salida similar a la siguiente:</p>
+<figure class="exe-figure exe-image position-center license-pd" style="width: 765px; text-align: center;"><img src="volumels.png" alt="Obteniendo la lista de volúemes .docker volume ls" title="Obteniendo la lista de volúemes .docker volume ls" width="765" height="74" />
+<figcaption class="figcaption"><a href="http://github.com/pekechis" target="_blank" class="author" rel="noopener">Juan Diego Pérez Jiménez</a>. <span class="title"><em>Obteniendo la lista de volúemes .docker volume ls</em></span> <span class="license"><span class="sep">(</span><span>Dominio público</span><span class="sep">)</span></span></figcaption>
+</figure>
+<p style="text-align: left;">Como podemos ver, la información que nos proporciona es limitada, el driver usado y el nombre que tenga cada volumen de la lista. Si no tiene nombre se nos muestra el ID del volumen.</p>
+<p style="text-align: left;"><span style="text-decoration: underline;"><strong>INFORMACIÓN DETALLADA DE UN VOLUMEN</strong></span></p>
+<p style="text-align: left;"><span style="text-decoration: underline;"></span>Si queremos información más detallada de un volumen tenemos que ejecutar la siguiente orden:</p>
+<table style="width: 100%; background-color: #000000;" border="0">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-size: 14pt; color: #ff0000;"># Información detallada de un volumen por nombre<br /></span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume inspect nombre_volumen<br /></span></p>
+<p><span style="font-size: 14pt; color: #ff0000;"># Información detallada de un volumen por ID</span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker volume inspect a5175dc955cfcf7f118f72dd37291592a69915f82a49f62f83666ddc81f67441</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Obtendremos una salida similar a la siguiente:</p>
+<figure class="exe-figure exe-image position-center license-pd" style="width: 678px; text-align: center;"><img src="m1_dockerinspect.png" alt="Información detallada de un volumen. docker inspect" title="Información detallada de un volumen. docker inspect" width="678" height="200" />
+<figcaption class="figcaption"><a href="http://github.com/pekechis" target="_blank" class="author" rel="noopener">Juan Diego Pérez Jiménez</a>. <span class="title"><em>Información detallada de un volumen. docker inspect</em></span> <span class="license"><span class="sep">(</span><span>Dominio público</span><span class="sep">)</span></span></figcaption>
+</figure>
+<p>Y la información que nos muestra es:</p>
+<ul>
+<li>La fecha de creación del volúmen.</li>
+<li>El tipo del driver.</li>
+<li>Etiquetas asociadas.</li>
+<li>El punto de montaje.</li>
+<li>El nombre del volumen.</li>
+<li>Las opciones asociadas al driver.</li>
+<li>Y el ámbito del volumen.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="42_volmenes_y_bind_mount.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="44_asociando_almacenamiento_a_los_contenedores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

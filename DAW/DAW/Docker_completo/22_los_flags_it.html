@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.2 Los flags -it | 1.Introducción. Docker para desarrolladores </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Juan Diego Pérez Jiménez para la Consejería de Educación" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-83"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">1.Introducción. Docker para desarrolladores</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Docker para desarrolladores</a></li>
+   <li><a href="1introduccin_docker_para_desarrolladores.html" class="daddy">1.Introducción. Docker para desarrolladores</a>
+   <ul class="other-section">
+      <li><a href="11_qu_es_docker.html" class="no-ch">1.1 ¿Qué es Docker?</a></li>
+      <li><a href="12_instalacin_de_docker.html" class="no-ch">1.2 Instalación de Docker</a></li>
+      <li><a href="13_hola_mundo.html" class="no-ch">1.3 Hola Mundo</a></li>
+      <li><a href="14_qu_es_docker_hub.html" class="no-ch">1.4 ¿Qué es Docker Hub?</a></li>
+      <li><a href="15_aplicaciones_a_la_docencia.html" class="no-ch">1.5 Aplicaciones a la docencia</a></li>
+      <li><a href="16_estructura_del_resto_del_curso.html" class="no-ch">1.6 Estructura del resto del curso</a></li>
+      <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="2_ejecutando_y_gestionando_contenedores_docker.html" class="current-page-parent daddy">2. Ejecutando y gestionando contenedores Docker</a>
+   <ul>
+      <li><a href="21_ejecutando_contenedores.html" class="no-ch">2.1 Ejecutando contenedores.</a></li>
+      <li id="active"><a href="22_los_flags_it.html" class="active no-ch">2.2 Los flags -it</a></li>
+      <li><a href="23_ejecucin_de_servicios_puertos_y_variables_de_entorno.html" class="no-ch">2.3 Ejecución de servicios. Puertos y variables de entorno</a></li>
+      <li><a href="24_asignando_nombre_a_los_contenedores.html" class="no-ch">2.4 Asignando nombre a los contenedores</a></li>
+      <li><a href="25_ejecutar_rdenes_en_los_contenedores.html" class="no-ch">2.5 Ejecutar órdenes en los contenedores.</a></li>
+      <li><a href="26_obtencin_de_informacin_de_los_contenedores.html" class="no-ch">2.6 Obtención de información de los contenedores</a></li>
+      <li><a href="27_gestin_de_contenedores.html" class="no-ch">2.7 Gestión de contenedores</a></li>
+      <li><a href="28_vdeo_resumen.html" class="no-ch">2.8. Vídeo resumen</a></li>
+      <li><a href="crditos0.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="3_gestin_de_imgenes_docker.html" class="daddy">3. Gestión de imágenes docker</a>
+   <ul class="other-section">
+      <li><a href="31_descarga_de_imgenes.html" class="no-ch">3.1 Descarga de imágenes</a></li>
+      <li><a href="32_borrado_de_imgenes.html" class="no-ch">3.2 Borrado de imágenes</a></li>
+      <li><a href="33_obteniendo_informacin_de_las_imgenes.html" class="no-ch">3.3 Obteniendo información de las imágenes</a></li>
+      <li><a href="34_ms_comandos_relacionados_con_imgenes.html" class="no-ch">3.4 Más comandos relacionados con imágenes</a></li>
+      <li><a href="34_vdeo_resumen.html" class="no-ch">3.4 Vídeo resumen</a></li>
+      <li><a href="crditos1.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="4_persistencia_en_docker.html" class="daddy">4. Persistencia en docker</a>
+   <ul class="other-section">
+      <li><a href="41_los_datos_en_los_contenedores.html" class="no-ch">4.1 Los datos en los contenedores</a></li>
+      <li><a href="42_volmenes_y_bind_mount.html" class="no-ch">4.2 Volúmenes y Bind Mount</a></li>
+      <li><a href="43_gestionando_volmenes_y_obteniendo_informacin.html" class="no-ch">4.3 Gestionando volúmenes y obteniendo información</a></li>
+      <li><a href="44_asociando_almacenamiento_a_los_contenedores.html" class="no-ch">4.4 Asociando almacenamiento a los contenedores</a></li>
+      <li><a href="45_herramientas_docker_en_visual_studio_code.html" class="no-ch">4.5 Herramientas Docker en Visual Studio Code</a></li>
+      <li><a href="46_uso_de_los_volmenes_y_bind_mounts.html" class="no-ch">4.6 Uso de los volúmenes y bind mounts</a></li>
+      <li><a href="47_bind_mounts_para_desarrollo_depurando_aplicaciones.html" class="no-ch">4.7 Bind mounts para desarrollo. Depurando aplicaciones</a></li>
+      <li><a href="crditos2.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="5_redes_en_docker.html" class="daddy">5. Redes en docker</a>
+   <ul class="other-section">
+      <li><a href="51_tipos_de_redes_en_docker.html" class="no-ch">5.1 Tipos de redes en Docker</a></li>
+      <li><a href="52_gestionando_redes.html" class="no-ch">5.2 Gestionando redes</a></li>
+      <li><a href="53_obteniendo_informacin_de_las_redes.html" class="no-ch">5.3 Obteniendo información de las redes</a></li>
+      <li><a href="54_asociando_redes_a_contenedores.html" class="no-ch">5.4 Asociando redes a contenedores</a></li>
+      <li><a href="55_iptables_en_contenedores.html" class="no-ch">5.5 Iptables en contenedores</a></li>
+      <li><a href="56_vdeo_resumen.html" class="no-ch">5.6 Vídeo resumen</a></li>
+      <li><a href="crditos3.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="6_construyendo_mis_propias_imgenes.html" class="daddy">6. Construyendo mis propias imágenes</a>
+   <ul class="other-section">
+      <li><a href="61_desde_un_contenedor_en_ejecucin.html" class="no-ch">6.1 Desde un contenedor en ejecución</a></li>
+      <li><a href="62_el_fichero_dockerfile.html" class="daddy">6.2 El fichero Dockerfile</a>
+      <ul class="other-section">
+         <li><a href="621_resumen_de_comandos_dockerfile.html" class="no-ch">6.2.1 Resumen de comandos Dockerfile</a></li>
+         <li><a href="622_ejemplos_de_ficheros_dockerfile.html" class="no-ch">6.2.2 Ejemplos de ficheros Dockerfile</a></li>
+         <li><a href="623_buenas_prcticas_para_ficheros_dockerfile.html" class="daddy">6.2.3 Buenas prácticas para ficheros Dockerfile</a>
+         <ul class="other-section">
+            <li><a href="__.html" class="no-ch">?????</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="63_conectando_github_con_dockerhub.html" class="no-ch">6.3 Conectando Github con DockerHub</a></li>
+      <li><a href="crditos4.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="7_aplicaciones_multicapa_con_dockercompose.html" class="daddy">7. Aplicaciones multicapa con docker-compose</a>
+   <ul class="other-section">
+      <li><a href="71_instalacin_de_dockercompose.html" class="no-ch">7.1 Instalación de docker-compose</a></li>
+      <li><a href="72_el_archivo_dockercomposeyml.html" class="no-ch">7.2 El archivo docker-compose.yml</a></li>
+      <li><a href="73_la_orden_dockercompose.html" class="no-ch">7.3 La orden docker-compose</a></li>
+      <li><a href="74_aplicaciones_a_la_docencia_entornos_de_prcticas.html" class="no-ch">7.4 Aplicaciones a la docencia. Entornos de prácticas.</a></li>
+      <li><a href="75_publicacin_de_archivos_dockercompose_en_dockerhub.html" class="no-ch">7.5 Publicación de archivos docker-compose en DockerHub</a></li>
+      <li><a href="76_recursos_utilizados.html" class="no-ch">7.6 Recursos utilizados</a></li>
+      <li><a href="crditos5.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="8_asegurando_contenedores.html" class="daddy">8. Asegurando contenedores</a>
+   <ul class="other-section">
+      <li><a href="81_seguridad_en_las_imgenes.html" class="no-ch">8.1 Seguridad en las imágenes</a></li>
+      <li><a href="82_seguridad_en_el_proceso_de_build.html" class="no-ch">8.2 Seguridad en el proceso de build</a></li>
+      <li><a href="83_seguridad_al_arrancar_los_contenedores.html" class="no-ch">8.3 Seguridad al arrancar los contenedores</a></li>
+      <li><a href="84_video_resumen.html" class="no-ch">8.4 Video Resumen</a></li>
+      <li><a href="crditos6.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+   <li><a href="9_integracin_y_despliegue_continuo_con_jenkins_y_docker.html" class="daddy">9. Integración y despliegue continuo con Jenkins y docker</a>
+   <ul class="other-section">
+      <li><a href="91_conceptos_importantes.html" class="no-ch">9.1 Conceptos importantes</a></li>
+      <li><a href="92_ejemplo_prctico.html" class="no-ch">9.2 Ejemplo práctico</a></li>
+      <li><a href="recursos.html" class="no-ch">Recursos</a></li>
+      <li><a href="crditos7.html" class="no-ch">Créditos</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="21_ejecutando_contenedores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="23_ejecucin_de_servicios_puertos_y_variables_de_entorno.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.2 Los flags -it</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_orientacion" id="id219">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">LOS FLAGS -it</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta219_110_2" class="block iDevice_content">
+<div class="exe-text"><p>Una de las cosas en las que <strong>me atasqué un poco</strong> cuando empecé a trabajar con docker fue el hecho de que<strong> "a veces"</strong> me encontraba con que <strong>los contenedores se paraban y ya no podía acceder a ellos ni iniciarlos de nuevo (con docker start).</strong> Al principio no sabía el porqué y además me desconcertaba el hecho de que me pasaba con algunos contenedores y con otros no.</p>
+<p>Sin entrar en detalles, que derivan de cómo se han construido los contenedores, la solución para que no os pase esto está en:</p>
+<ul>
+<li><strong>Siempre usar el flag -it</strong> al ejecutar una orden docker run si es un contenedor que no tiene servicios. Este -it es la unión del  flag -i (--interactive) y el flag -t (--tty) que lo que hacen es abrir la entrada estándar del contenedor que estamos ejecutando y permitir la posibilidad de abrir un terminal en el contenedor. Es decir,  <strong>nos va a permitir interactuar con él.</strong></li>
+<li><strong>No debemos añadir al final otra orden que no sea /bin/bash</strong> (u otro shell que puedan contener los contenedores) ya que eso sobreescribe la orden de arranque de algunos contenedores (shell o inicio de servicio dependiendo del tipo de contenedor) y será imposible volver a arrancarlos una vez parados. Hay que tener en cuenta que una vez arrancados, si lo hemos hecho bien, siempre podremos ejecutar órdenes en el contenedor, tal y como veremos posteriormente.</li>
+</ul>
+<p>Debemos de tener en cuenta que si los contenedores no son contenedores con servicios se paran tras salir la primera vez de interactuar con ellos. Para iniciarlos de nuevo, como ya he dejado ver en el primer párrafo, tenemos la orden docker start cuyo funcionamiento es muy simple. Lo vamos a ilustrar con un ejemplo.</p>
+<table style="width: 100%; background-color: #000000;" border="0">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-size: 14pt; color: #ff0000;"># Arrancar el contenedor con nombre servidorWeb (debe estar parado)</span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker start servidorWeb</span></p>
+<p><span style="font-size: 14pt; color: #ff0000;"># Arrancar el contenedor con ID 511eeed5992d</span></p>
+<p><span style="font-size: 14pt; color: #00ff00;">&gt; docker start 511eeed5992d</span></p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="21_ejecutando_contenedores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="23_ejecucin_de_servicios_puertos_y_variables_de_entorno.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
