@@ -1,9 +1,52 @@
-ul > li{
-    list-style: none;
-    width: 100px;
-    height: 50px;
-    color: white;
-    background-color: rgb(7, 146, 151);
-    display: inline-block;
-    text-align: center;
+body {
+  font-family: sans-serif;
 }
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav ul li a {
+  background-color: #0c9ba0;
+  color: #fff;
+  display: block;
+  border: 1px solid;
+  padding: 10px 12px;
+}
+
+nav ul li a:hover {
+  background-color: #0fbfc6;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li{
+  position: relative;
+}
+
+nav ul li ul li ul{
+  top: 0;
+  left: 150px;
+}
+
+nav ul li a:not(:last-child):after {
+  content: "\25bc";
+  font-size: 9px;
+  padding-left: 6px;
+}
+
