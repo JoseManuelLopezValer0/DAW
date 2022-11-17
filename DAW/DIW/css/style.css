@@ -101,7 +101,7 @@ body {
   font-family: sans-serif;
 }
 
-nav {
+.cabecera-ul {
   list-style: none;
   text-decoration: none;
   margin: 0;
