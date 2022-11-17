@@ -8,11 +8,12 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
+<?php
+    include_once "lib/cabecera.php";
+?>
 <body>
     <main>
-        <h1>Inicio</h1>
-        <p>Pagina de Jose Manuel Lopez Valero</p>
+        <h1>Pagina de Jose Manuel Lopez Valero</h1>
         <br>
         <?php
         // mostramos la estructura de directorios

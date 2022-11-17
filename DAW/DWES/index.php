@@ -7,23 +7,13 @@
     </head>
 
 <body>
-    <header class="super-cabecera">
-        <nav>
-            <ul>
-                <li><a href="../../">
-                        <i class="fa fa-fw fa-home fa-5x"></i>
-                        <span class="borde"></span>
-                        <span class="texto">VOLVER</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
+    <?php
+    include "../../lib/cabecera.php";
+    ?>
     <hr>
     <?php
-    include "../../DAW/config/config.php";
-    obtener_estructura_directorios(".");
+include "../../DAW/config/config.php";
+obtener_estructura_directorios(".");
     ?>
 </body>
 

@@ -98,82 +98,54 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000000;
+  font-family: sans-serif;
 }
 
-.super-cabecera {
-  position: relative;
-}
-
-.super-cabecera nav {
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.super-cabecera nav ul {
+nav {
+  list-style: none;
+  text-decoration: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
-.super-cabecera nav ul li {
-  position: relative;
+nav > ul > li {
   display: inline-block;
-  vertical-align: top;
-  padding: 10px 0 0 0;
-  margin: 0;
-  width: 20%;
 }
 
-.super-cabecera nav ul li a {
-  text-decoration: none;
-  color: rgb(243, 243, 243);
-}
-
-.super-cabecera nav ul li i {
-  display: block;
-  vertical-align: top;
-  width: 100%;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-
-.super-cabecera nav ul li span.borde {
-  display: block;
-  height: 4px;
+nav ul li a {
   background-color: #ffffff;
-  margin-top: 10px;
-}
-
-.super-cabecera nav ul li span.texto {
+  color: rgb(0, 0, 0);
   display: block;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  background-color: #9b9b9b;;
+  border: 1px solid;
+  padding: 10px 12px;
 }
 
-/* Transiciones en efecto Hover */
-
-.super-cabecera li,
-.super-cabecera li * {
-  transition: 400ms;
+nav ul li a:hover {
+  background-color: #cacaca;
 }
 
-.super-cabecera nav ul li:hover {
-  background-color: #000000;
+nav ul li ul {
+  display: none;
+  position: absolute;
+  min-width: 150px;
 }
 
-.super-cabecera nav ul li:hover span.borde {
-  background-color: #ffffff;
+nav ul li:hover > ul {
+  display: block;
 }
 
-.super-cabecera nav ul li:hover a i {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
+nav ul li{
+  position: relative;
 }
 
-.super-cabecera nav ul li:hover a .texto {
-  color: rgb(255, 251, 251);
-  background-color: rgb(0, 0, 0);
+nav ul li ul li ul{
+  top: 0;
+  left: 150px;
 }
+
+nav ul li a:not(:last-child):after {
+  content: "\25bc";
+  font-size: 9px;
+  padding-left: 6px;
+}
+
