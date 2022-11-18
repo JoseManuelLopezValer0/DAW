@@ -1,0 +1,9 @@
+.loc {
+    width: 100px;
+    display: inline-block;
+    border: 1px solid green;
+}
+
+.clase_error {
+    color: red;
+}
