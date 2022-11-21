@@ -15,6 +15,7 @@ function obtener_estructura_directorios($ruta)
                 && $carpeta != "."
                 && $carpeta != ".."
                 && $carpeta != ".git"
+                && $carpeta != ".github"
                 && $carpeta != "config"
                 && $carpeta != "css"
                 && $carpeta != "lib"
@@ -26,7 +27,11 @@ function obtener_estructura_directorios($ruta)
                 && $carpeta != "data"
                 && $carpeta != "doc"
                 && $carpeta != "app"
+                && $carpeta != "include"
                 && $carpeta != "vendor"
+                && $carpeta != "my-app"
+                && $carpeta != "dist"
+                && $carpeta != "src"
             ) {
                 echo "<li class='lilista'><a class ='alista'href='$ruta_completa'><span class='spanlista'>$carpeta</span></a></li>";
                 obtener_estructura_directorios($ruta_completa);
