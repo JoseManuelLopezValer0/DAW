@@ -1,7 +1,7 @@
 <?php
 function obtener_estructura_directorios($ruta)
 {
-    echo "Directorio: $ruta <BR>";
+    // echo "Directorio: $ruta <BR>";
     if (is_dir($ruta)) {
         $gestor = opendir($ruta);
         echo "<ul>";
