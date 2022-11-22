@@ -7,7 +7,7 @@ include ('lib/functions.php');
 echo 'insertar un equipo <BR>';
 
 $db = conectaDB();
-$consulta = "INSERT INTO equipos (equipo) VALUES ('Equipo 2')";
+$consulta = "INSERT INTO equipos (id, equipo) VALUES ('null', 'Picapiedra')";
 $result = $db->query($consulta);
 if (!$result) {
     print "Error en la consulta.";
@@ -31,7 +31,7 @@ if (!$result) {
 echo '<BR>';
 echo 'Eliminar un equipo <BR>';
 
-$consulta = "DELETE FROM equipos WHERE equipo = 'Equipo 2'";
+$consulta = "DELETE FROM equipos WHERE equipo = 'Picapiedra'";
 $result = $db->query($consulta);
 if (!$result) {
     print "Error en la consulta.";
