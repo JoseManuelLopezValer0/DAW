@@ -32,6 +32,8 @@ function obtener_estructura_directorios($ruta)
                 && $carpeta != "my-app"
                 && $carpeta != "dist"
                 && $carpeta != "src"
+                && $carpeta != "node_modules"
+                && $carpeta != "public"
             ) {
                 echo "<li class='lilista'><a class ='alista'href='$ruta_completa'><span class='spanlista'>$carpeta</span></a></li>";
                 obtener_estructura_directorios($ruta_completa);
