@@ -1,0 +1,11 @@
+.contenedor {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+  }
+  
+  .op {
+    display: block;
+    border:  1px solid black;
+  }
