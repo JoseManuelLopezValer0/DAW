@@ -1,0 +1,14 @@
+// Creacion de Docker
+docker run -d -it --name ubuntu-server ubuntu 
+docker run -d -it --name ubuntu-cliente ubuntu 
+
+//Listado de Docker
+docker ps
+
+//Inspeccion de Docker
+docker inspect ubuntu-server 
+docker inspect ubuntu-cliente 
+
+//Inicion de Docker por terminal
+docker exec -it ubuntu-server bash
+docker exec -it ubuntu-cliente bash

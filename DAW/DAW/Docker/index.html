@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="López" />
+    <title>Docker</title>
+  </head>
+
+  <body>
+    <h1 id="docker-comandos-basicos">Docker comandos basicos</h1>
+    <h2 id="1-crear-la-imagen">1 Crear la imagen</h2>
+    <pre><code>docker <span class="hljs-keyword">run</span><span class="bash"> <span class="hljs-_">-d</span> -it --name <span class="hljs-string">'Nombre del contenedor'</span> <span class="hljs-string">'Nombre de la imagen'</span></span>
+    </code></pre>
+    <h2 id="2-listado-de-docker">2 Listado de Docker</h2>
+    <pre><code><span class="hljs-attribute">docker ps</span>
+    </code></pre>
+    <h2 id="3-inspeccion-de-docker">3 Inspeccion de Docker</h2>
+    <pre><code>docker <span class="hljs-keyword">inspect</span> <span class="hljs-string">'Nombre del contenedor'</span><span class="hljs-string">' </span>
+    </code></pre>
+    <h2 id="4-inicio-de-docker-por-terminal">
+      4 Inicio de Docker por terminal
+    </h2>
+    <pre><code>docker <span class="hljs-built_in">exec</span> -it <span class="hljs-string">'Nombre del contenedor'</span> bash
+    </code></pre>
+  </body>
+</html>
