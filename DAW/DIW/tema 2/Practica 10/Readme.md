@@ -19,7 +19,7 @@
    - Color-Transparencias
    - Degradado
 3. Si no existe algo de los puntos anteriores, debe ser debidamente justificado
-4. Hay que diseñar el [wireframe][wirefarame] del blog antes de empezar a codificar. Se entregará junto con la práctica
+4. Hay que diseñar el [wireframe][wireframe] del blog antes de empezar a codificar. Se entregará junto con la práctica
 5. Debe aparecer información sobre ti, con tu foto
 6. Microdatos(Persona) Opcional
 7. Al menos un canvas
@@ -39,4 +39,4 @@
 [canvas]: https://www.canva.com/
 [normalize]: https://necolas.github.io/normalize.css/
 [colors]: https://moodle.iesgrancapitan.org/mod/page/view.php?id=516q
-[wirefarame]: https://wireframe.cc/1dEDwH
+[wireframe]: https://wireframe.cc/1dEDwH
