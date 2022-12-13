@@ -14,8 +14,11 @@ $prosesar = false;
 
 session_start();
 
-if (!isset($_SESSION["Baraja"])) {
-    $_SESSION["Baraja"] = shuffle($baraja);
+if (!isset($_session["Baraja"])) {
+    shuffle($baraja);
+    foreach ($baraja as $carta) {
+        $_session["Baraja"][] = $carta;
+    }
 }
 
 if (!isset($_COOKIE["victorias"])) {
@@ -27,42 +30,30 @@ if (isset($_GET["reiniciar"])) {
 }
 
 if (isset($_GET["pedir"])) {
-    if (isset($_GET["suma"])) {
-        if ($_SESSION["suma"] <= 7.5 && $_SESSION["sumaM"] < $_SESSION["suma"] || $_SESSION["sumaM"] > 7.5 && $_SESSION["suma"] <= 7.5 || $_SESSION["sumaM"] > 7.5 && $_SESSION["suma"] > 7.5) {
-            echo "Has ganado";
-            $_COOKIE["victorias"]++;
-        } elseif ($_SESSION["suma"] > 7.5) {
-            echo "Has perdido";
-        }
-    }
 
-    $numero = rand(0, 39);
-    $_SESSION["suma"] += $baraja[$numero]["valor"];
-    $_SESSION["cartas"][] = $baraja[$numero]["numero"];
-
-    $numeroM = rand(0, 39);
-    $_SESSION["sumaM"] += $baraja[$numeroM]["valor"];
-    $_SESSION["cartasMaquina"][] = $baraja[$numeroM]["numero"];
+    $SESION["cartas"][] = $_SESSION["Baraja"][$SESION["Baraja"] - 1];
+    array_pop($_SESSION["Baraja"]);
 }
 
 if (isset($_GET["nueva"])) {
     $_SESSION["suma"] = 0;
     $_SESSION["sumaM"] = 0;
-    $_SESSION["cartas"] = [];
-    $_SESSION["cartasMaquina"] = [];
+    $_SESSION["cartas"] = array();
+    $_SESSION["cartasMaquina"] = array();
 }
 
+setcookie("victorias", 0, time() + 3600);
 echo "<!DOCTYPE html>
-        <html>
-        <head>
-        <meta charset='UTF-8'>
-        <title>Examen UD4</title>
-        </head>
-        <body>
-        <h1>Las 7 y 1/2</h1>
-        <h2>Numero de victorias: " . $_COOKIE["victorias"] . "</h2>
-        <a href='index.php?pedir=1'>Pedir carta</a> | <a>Plantarse</a> | <a href='index.php?reiniciar=1'>Reiniciar victorias</a> | <a href='index.php?nueva=1'>Nueva partida</a>
-        <br>";
+    <html>
+    <head>
+    <meta charset='UTF-8'>
+    <title>Examen UD4</title>
+    </head>
+    <body>
+    <h1>Las 7 y 1/2</h1>
+    <h2>Numero de victorias: " . $_COOKIE["victorias"] . "</h2>
+    <a href='#' > Pedir </a> | <a href='#'>Plantarse</a> | <a href='#'>Reiniciar victorias</a> | <a href='#'>Nueva partida</a>
+    <br>";
 echo "Jugador: 
     <br>
     valor: " . $_SESSION["suma"] . "<br>
@@ -84,13 +75,7 @@ if (isset($_SESSION["cartasMaquina"])) {
     }
 }
 
-// echo "<br>
-// jugador: valor " . $_SESSION["suma"] . "<br>
-// jugador: carta " . $baraja[$numero]["numero"] . "<br>
-// jugador: carta " . $numero . "<br>
-// maquina: valor " . $_SESSION["sumaM"] . "<br>
-// maquina: carta " . $baraja[$numeroM]["numero"] . "<br>
-// maquina: carta " . $numeroM . "<br>
+
 echo "
 </body>
 </html>";
