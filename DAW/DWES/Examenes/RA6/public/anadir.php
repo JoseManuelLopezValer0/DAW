@@ -17,14 +17,12 @@ session_start();
 
 
 if (isset($_POST['anadir'])) {
-    $url = $_POST['url'];
-    $titulo = $_POST['titulo'];
+    $url = $_POST['bm_url'];
     $descripcion = $_POST['descripcion'];
-    $categoria = $_POST['categoria'];
-    $user = $_SESSION['user'];
-    $sql = "INSERT INTO bookmarks (url, titulo, descripcion, categoria, user) VALUES (:url, :titulo, :descripcion, :categoria, :user)";
+    $user = $_SESSION['idUsuario'];
+    $sql = "INSERT INTO bookmarks (bm_url, descripcion, idUsuario) VALUES ('$url', '$descripcion', '$user')";
     $stmt = $db->prepare($sql);
-    $stmt->execute(array(":url" => $url, ":titulo" => $titulo, ":descripcion" => $descripcion, ":categoria" => $categoria, ":user" => $user));
+    $stmt -> execute(array(":bm_url" => $url,":descripcion" => $descripcion, ":idUsuario" => $user));
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     if ($result) {
         echo "Bookmark añadido";
@@ -51,8 +49,6 @@ if (isset($_POST['anadir'])) {
             <input type="text" name="titulo" id="titulo" />
             <label for="descripcion">Descripcion</label>
             <input type="text" name="descripcion" id="descripcion" />
-            <label for="categoria">Categoria</label>
-            <input type="text" name="categoria" id="categoria" />
             <input type="submit" name="anadir" value="Añadir" />
         </form>
     </div>

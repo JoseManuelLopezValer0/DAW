@@ -18,6 +18,23 @@ $msgError = "";
 
 $_SESSION['user'] = ' ';
 
+if (isset($_POST['login'])) {
+    $user = $_POST['user'];
+    $password = $_POST['password'];
+    $sql = "SELECT * FROM users WHERE user = :user AND psw = :password";
+    $stmt = $db->prepare($sql);
+    $stmt->bindParam(':user', $user);
+    $stmt->bindParam(':password', $password);
+    $stmt->execute();
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    if ($result) {
+        $_SESSION['user'] = $user;
+        header('Location: index.php');
+    } else {
+        $msgError = "Usuario o contraseña incorrectos";
+    }
+}
+
 ?>
 
 <html>
@@ -62,8 +79,6 @@ $_SESSION['user'] = ' ';
                     foreach ($result as $row) {
                         echo "<tr><td><a href='" . $row['bm_url'] . "'>" . $row['bm_url'] . "</a></td><td>" . $row['description'] . "</td></tr>";
                     }
-
-
                     echo "</table>";
                 } else {
                     echo "No hay bookmarks";

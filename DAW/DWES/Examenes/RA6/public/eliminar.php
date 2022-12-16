@@ -21,12 +21,7 @@ if (isset($_POST['eliminar'])) {
     $sql = "DELETE FROM bookmarks WHERE id = :id";
     $stmt = $db->prepare($sql);
     $stmt->execute(array(":id" => $id));
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    if ($result) {
-        echo "Bookmark eliminado";
-    } else {
-        echo "Error al eliminar bookmark";
-    }
+    header("Location: bookmarks.php");
 }
 ?>
 
@@ -40,10 +35,19 @@ if (isset($_POST['eliminar'])) {
     <h1>Bookmarks</h1>
     <div>
         <form action="eliminar.php" method="post">
-            <label for="id">ID</label>
-            <input type="text" name="id" id="id" />
+        <!-- listar todos y poner un checkbox para poder seleccionarlos -->
+        <?php
+        $user = $_SESSION['user'];
+        $sql = "SELECT * FROM bookmarks WHERE idUsuario = :idUsuario";
+        $stmt = $db->prepare($sql);
+        $stmt->execute(array(":idUsuario" => $user));
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($result as $row) {
+            echo "<input type='checkbox' name='id' value='" . $row['id'] . "' />" . $row['bm_url'] . "<br>";
+        }
+        ?>
             <input type="submit" name="eliminar" value="Eliminar" />
-        </form>
+
     </div>
 </body>
 

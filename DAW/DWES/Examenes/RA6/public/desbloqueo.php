@@ -17,16 +17,14 @@ session_start();
 
 
 if (isset($_POST['desbloquear'])) {
-    $user = $_POST['user'];
-    $sql = "UPDATE usuarios SET bloqueado = 0 WHERE user = :user";
-    $stmt = $db->prepare($sql);
-    $stmt->execute(array(":user" => $user));
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    if ($result) {
-        echo "Usuario desbloqueado";
-    } else {
-        echo "Error al desbloquear usuario";
+    $desbloquear = $_POST['desbloquear'];
+    foreach ($desbloquear as $id) {
+        $sql = "UPDATE usuarios SET bloqueado = 0 WHERE id = :id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindParam(':id', $id);
+        $stmt->execute();
     }
+    header('Location: desbloqueo.php');
 }
 
 ?>
@@ -48,10 +46,10 @@ if (isset($_POST['desbloquear'])) {
         if ($result) {
             echo "<form action='desbloqueo.php' method='post'>";
             echo "<table>";
-            echo "<tr><th>Usuario</th><th>Desbloquear</th><th>Eliminar</th></tr>";
+            echo "<tr><th>Usuario</th><th>Desbloquear</th></tr>";
             foreach ($result as $row) {
                 echo "<tr><td>" . $row['user'] . "</td>";
-                echo "<td><input type='checkbox' name='desbloquear[]' value='" . $row['user'] . "'></td>";
+                echo "<td><input type='checkbox' name='desbloquear[]' value='" . $row['id'] . "'></td>";
             }
             echo "</table>";
             echo "<input type='submit' name='desbloquear' value='Desbloquear' />";
