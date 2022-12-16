@@ -1,0 +1,98 @@
+:root {
+  --primary-text-color: #1b1d1d;
+  --secondary-text-color: #fff;
+  --secondary-color: rgba(245, 246, 246, 0.8); /* #F5F6F6;*/
+
+  --color-formula1: #ff1e00;
+  --primary-color-wec: #00236f;
+  --secondary-color-wec: #5cbb0a;
+  --color-dakar: #c13a1c;
+  --color-indy: #0075c9;
+  --color-alpine: #0071c2;
+  --color-AM: #00352f;
+
+  --degradado-dakar-indy: linear-gradient(
+      to right,
+      var(--color-dakar),
+      var(--color-indy)
+    )
+    no-repeat;
+  --degradado-wec: linear-gradient(
+      to right,
+      var(--primary-color-wec),
+      var(--secondary-color-wec)
+    )
+    no-repeat;
+  --degradado-AM-alpine-wec-f1: linear-gradient(
+      to right,
+      var(--color-AM),
+      var(--color-alpine),
+      var(--primary-color-wec),
+      var(--color-formula1)
+    )
+    no-repeat;
+}
+body {
+  background-image: url("imagenes\huella_rueda.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+}
+header {
+  background: linear-gradient(to left, var(--color-dakar), var(--color-indy))
+    no-repeat;
+  height: 30px;
+}
+header > img {
+  height: 30px;
+  margin: 0 auto;
+  display: inline;
+  vertical-align: middle;
+}
+.f1 {
+  height: 10px;
+}
+
+.LastChance {
+  display: flex;
+  flex-direction: row;
+}
+
+.LastChance > div {
+  align-self: auto;
+  padding: 10px;
+}
+
+.alonso {
+  flex-grow: 1;
+}
+.alonso > img {
+  width: max-content;
+  height: fit-content;
+}
+.coche {
+  flex-grow: 2;
+}
+.coche > img {
+  width: max-content;
+  height: fit-content;
+}
+
+Palmares {
+    display: -webkit-flex;
+	flex-flow: row wrap;
+    border: 1px solid black;
+    margin: 10px;
+    content: center;
+}
+
+Palmares > img {
+	flex: 1 auto;
+	align-self: auto;
+}
+Palmares > figcaption {
+	flex: 1 auto;
+	align-self: auto;
+}
+

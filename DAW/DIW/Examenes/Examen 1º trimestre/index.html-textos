@@ -1,0 +1,83 @@
+Fernando Alonso
+Piloto en estado puro
+
+
+Last chance?
+
+TEST ABU DHABI FERNANDO ALONSO AM F1</h2>
+
+Palmares
+
+/* Aquí figure */
+
+	
+							
+	WEC
+		Bélgica 2018: 6 Horas de Spa-Francorchamps
+		Francia 2018: 24 Horas of Le Mans
+		WEC 2018: Campeón del mundo de Resistencia
+		EEUU 2019: 24 Horas de Daytona
+		EEUU 2019: 1.000 Millas de Sebring
+		Bélgica 2019: 6 Horas de Spa-Francorchamps
+		Francia 2019: 24 Horas of Le Mans
+		WEC 2019: Bicampeón del mundo de Resistencia
+							
+
+		Indianapolis 2017: Puesto 24 - Rookie del año
+		Indianapolis 2019: No clasificó
+		Marruecos 2019: Primera toma de contacto con la arena
+		Arabia Saudí 2019: Tercer Puesto
+		Dakar 2020: Segundo Etapa 8
+		Indianapolis 2020: Puesto 21
+		Continuará: .......
+
+Campeonatos
+	La Misión
+		/* Aquí una imagen */
+
+	Bicampeón del mundo
+		Lorem fistrum de la pradera mamaar esse ut et labore ad enim diodenoo irure. Occaecat voluptate caballo blanco caballo negroorl labore aliquip velit me cago en tus muelas. Qui occaecat apetecan condemor et qué dise usteer sexuarl qui. Dolore eiusmod hasta luego Lucas ut velit torpedo.
+		
+		/* Aquí una imagen */
+
+		No te digo trigo por no llamarte Rodrigor la caidita. Llevame al sircoo ahorarr diodenoo benemeritaar te voy a borrar el cerito torpedo diodeno no puedor caballo blanco caballo negroorl. Ese que llega apetecan caballo blanco caballo negroorl diodeno.
+		No te digo trigo por no llamarte Rodrigor la caidita. Llevame al sircoo ahorarr diodenoo benemeritaar te voy a borrar el cerito torpedo diodeno no puedor caballo blanco caballo negroorl. Ese que llega apetecan caballo blanco caballo negroorl diodeno.
+		No te digo trigo por no llamarte Rodrigor la caidita. Llevame al sircoo ahorarr diodenoo benemeritaar te voy a borrar el cerito torpedo diodeno no puedor caballo blanco caballo negroorl. Ese que llega apetecan caballo blanco caballo negroorl diodeno.
+
+	Bicampeón del mundo
+		Lorem fistrum de la pradera mamaar esse ut et labore ad enim diodenoo irure. Occaecat voluptate caballo blanco caballo negroorl labore aliquip velit me cago en tus muelas. Qui occaecat apetecan condemor et qué dise usteer sexuarl qui. Dolore eiusmod hasta luego Lucas ut velit torpedo.
+		
+		/* Aquí una imagen */
+
+		No te digo trigo por no llamarte Rodrigor la caidita. Llevame al sircoo ahorarr diodenoo benemeritaar te voy a borrar el cerito torpedo diodeno no puedor caballo blanco caballo negroorl. Ese que llega apetecan caballo blanco caballo negroorl diodeno.
+		No te digo trigo por no llamarte Rodrigor la caidita. Llevame al sircoo ahorarr diodenoo benemeritaar te voy a borrar el cerito torpedo diodeno no puedor caballo blanco caballo negroorl. Ese que llega apetecan caballo blanco caballo negroorl diodeno.
+		No te digo trigo por no llamarte Rodrigor la caidita. Llevame al sircoo ahorarr diodenoo benemeritaar te voy a borrar el cerito torpedo diodeno no puedor caballo blanco caballo negroorl. Ese que llega apetecan caballo blanco caballo negroorl diodeno.
+
+
+
+face
+directions_car
+settings
+vpn_key
+clear
+
+
+/** Colores  **/
+
+:root{
+	--primary-text-color: #1B1D1D;
+	--secondary-text-color: #FFF;
+	--secondary-color:  rgba(245,246,246,0.8);/* #F5F6F6;*/
+	
+	--color-formula1: #FF1E00;
+	--primary-color-wec: #00236F;
+	--secondary-color-wec: #5CBB0A;
+	--color-dakar: #C13A1C;
+	--color-indy:#0075C9;
+	--color-alpine: #0071C2;
+	--color-AM: #00352F;
+	
+	--degradado-dakar-indy: linear-gradient(to right,var(--color-dakar),var(--color-indy)) no-repeat;
+	--degradado-wec: linear-gradient(to right,var(--primary-color-wec),var(--secondary-color-wec)) no-repeat;
+	--degradado-AM-alpine-wec-f1: linear-gradient(to right,var(--color-AM), var(--color-alpine),var(--primary-color-wec),var(--color-formula1)) no-repeat;
+}
