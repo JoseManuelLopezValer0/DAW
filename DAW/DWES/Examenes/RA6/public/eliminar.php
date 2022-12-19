@@ -33,6 +33,7 @@ if (isset($_POST['eliminar'])) {
 
 <body>
     <h1>Bookmarks</h1>
+    <a href="index.php">Volver</a><br>
     <div>
         <form action="eliminar.php" method="post">
         <!-- listar todos y poner un checkbox para poder seleccionarlos -->

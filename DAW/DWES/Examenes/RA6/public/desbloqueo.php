@@ -37,6 +37,7 @@ if (isset($_POST['desbloquear'])) {
 
 <body>
     <h1>Bookmarks</h1>
+    <a href="index.php">Volver</a><br>
     <div>
         <?php
         $sql = "SELECT * FROM usuarios WHERE bloqueado = 1";
