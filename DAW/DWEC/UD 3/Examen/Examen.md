@@ -13,7 +13,7 @@
 	1. .innerHTML
 	2. cajaTexto.value=''
 - [ ] VENTANAS:
-	1. window.open("nombreyapellidos.html", "_self"); const ventana = window.open('','' 'width=600, height=1100');
+	1. window.open("nombreyapellidos.html", "_self"); const ventana = window.open('','','width=600, height=1100');
 	2. ventana.document.open();
 	3. ventana.document.write();
 	4. ventana.document.close();
