@@ -8,6 +8,6 @@ class IndexController extends BaseController
     {
 
         $data = array('mensage' => 'Hola mundo');
-        $this->renderHTML('../views/index_view.php', $data);;
+        $this->renderHTML('../views/index_view.php', $data);
     }
 }

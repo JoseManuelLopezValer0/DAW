@@ -2,7 +2,7 @@
 class Router
 {
 
-    /* @var Route[] */
+    /** @var Route[] */
     /*contiene nombre, ruta y array con controlador y accioón*/
     private $routes = array();
     public function add($route)
@@ -23,3 +23,4 @@ class Router
         return $matches;
     }
 }
+
