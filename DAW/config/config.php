@@ -27,6 +27,8 @@ function obtener_estructura_directorios($ruta)
                 && $carpeta != "data"
                 && $carpeta != "doc"
                 && $carpeta != "app"
+                && $carpeta != "App"
+                && $carpeta != "views"
                 && $carpeta != "include"
                 && $carpeta != "vendor"
                 && $carpeta != "my-app"
