@@ -27,10 +27,5 @@ DAW/DIW/tema 2/Practica 7/
 DAW/DIW/tema 2/Practica 9/LopezValeroJoseManuel.zip
 desktop.ini
 extensions.json
-.idea/.gitignore
-.idea/dataSources.xml
-.idea/modules.xml
-.idea/php.xml
-.idea/Servidor.iml
-.idea/vcs.xml
+.idea
 m.md
