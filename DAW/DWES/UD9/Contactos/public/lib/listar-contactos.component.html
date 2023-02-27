@@ -1,0 +1,39 @@
+<h2>Listado de contactos  </h2>
+
+<table mat-table [dataSource]="contactos" class="mat-elevation-z8" style="width:
+    100%;">
+
+<ng-container matColumnDef="nombre">
+        <th mat-header-cell *matHeaderCellDef>Nombre</th>
+        <td mat-cell *matCellDef="let contacto"> {{contacto.nombre}} </td>
+    </ng-container>
+    <ng-container matColumnDef="telefono">
+        <th mat-header-cell *matHeaderCellDef>Telefono</th>
+        <td mat-cell *matCellDef="let contacto"> {{contacto.telefono}} </td>
+    </ng-container>
+    <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef>Email</th>
+        <td mat-cell *matCellDef="let contacto"> {{contacto.email}} </td>
+    </ng-container>
+    <ng-container matColumnDef="editar">
+        <th mat-header-cell *matHeaderCellDef>Editar</th>
+        <td mat-cell *matCellDef="let contacto">
+            <a mat-icon-button [routerLink]="['/contactos/editar', contacto.id]">
+                <mat-icon color="primary">edit</mat-icon>
+            </a>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="eliminar">
+        <th mat-header-cell *matHeaderCellDef>Eliminar</th>
+        <td mat-cell *matCellDef="let contacto">
+            <button (click)="eliminarContacto(contacto)" mat-icon-button>
+                <mat-icon color="warn">delete</mat-icon>
+            </button>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="['nombre','telefono','email', 'editar','eliminar']"></tr>
+    <tr mat-row *matRowDef="let fila; columns: ['nombre', 'telefono','email',
+        'editar','eliminar'];"></tr>
+
+    </table>

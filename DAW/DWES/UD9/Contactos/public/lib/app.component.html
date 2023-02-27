@@ -1,0 +1,50 @@
+<div class="contenedor-padre">
+  <mat-toolbar class="barra" color="primary">
+    <mat-toolbar-row>
+      <button (click)="cajon.toggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>
+        Gestión de Contactos&nbsp;
+      </span>
+      <span>
+
+      </span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav-container class="contenido">
+    <mat-sidenav style="min-width: 300px;" #cajon mode="side">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/contactos/agregar">
+          <mat-icon color="accent">add</mat-icon>
+          Agregar contacto
+        </a>
+        <a mat-list-item routerLink="/contactos/">
+          <mat-icon color="primary">Contacto</mat-icon>
+          Ver contactos
+        </a>
+      </mat-nav-list>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Más
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <mat-nav-list>
+            <a mat-list-item routerLink="/acerca-de">
+              Login
+            </a>
+      
+              Registro
+            </a>
+          </mat-nav-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-sidenav>
+    <mat-sidenav-content class="padding-10">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

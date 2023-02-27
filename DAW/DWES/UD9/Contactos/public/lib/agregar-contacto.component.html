@@ -1,0 +1,28 @@
+<h2>Agregar contacto <mat-icon>contactos</mat-icon></h2>
+<form (ngSubmit)="onSubmit()" #formContacto="ngForm">
+    <p>
+
+        <mat-form-field>
+            <input matInput name="nombre" [(ngModel)]="contactoModel.nombre"
+                type="text"
+                placeholder="Nombre">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input matInput name="telefono" [(ngModel)]="contactoModel.telefono"
+                type="text"
+                placeholder="Teléfono">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field>
+            <input matInput name="email" [(ngModel)]="contactoModel.email"
+                type="email"
+                placeholder="email">
+        </mat-form-field>
+    </p>
+    <p>
+        <button type="submit" mat-flat-button color="accent">Guardar</button>
+    </p>
+</form>
