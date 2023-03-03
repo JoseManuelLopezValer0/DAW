@@ -39,6 +39,7 @@ function obtener_estructura_directorios($ruta)
                 && $carpeta != "scripts"
                 && $carpeta != "script"
                 && $carpeta != "modules"
+                && $carpeta != ".vite"
             ) {
                 echo "<li class='lilista'><a class ='alista'href='$ruta_completa'><span class='spanlista'>$carpeta</span></a></li>";
                 obtener_estructura_directorios($ruta_completa);
