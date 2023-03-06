@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <?php
-include_once "lib/cabecera.php";
+include_once "lib/cabecera.html";
 ?>
 
 <body>

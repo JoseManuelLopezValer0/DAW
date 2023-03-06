@@ -7,14 +7,18 @@
     </head>
 
 <body>
-    <?php
-    include "../../lib/cabecera.php";
-    ?>
-    <hr>
-    <?php
-include "../../DAW/config/config.php";
-obtener_estructura_directorios(".");
-    ?>
+    <header>
+        <?php
+        include "../../lib/cabecera.html";
+        ?>
+        <hr>
+    </header>
+    <main>
+        <?php
+        include "../../DAW/config/config.php";
+        obtener_estructura_directorios(".");
+        ?>
+    </main>
 </body>
 
 </html>
