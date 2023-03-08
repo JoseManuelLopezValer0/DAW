@@ -13,7 +13,6 @@
   padding: 0;
   outline: 0;
   white-space: nowrap;
-  color: rgb(255, 255, 255);
   font-size: 2em;
   line-height: 1.2em;
   list-style: none;
@@ -107,6 +106,10 @@ body {
   padding: 0;
 }
 
+.cabecera-ul li a{
+  border-radius: 5px;
+}
+
 nav > ul > li {
   display: inline-block;
 }
@@ -149,3 +152,7 @@ nav ul li a:not(:last-child):after {
   padding-left: 6px;
 }
 
+li :hover {
+  background-color: #cacaca;
+  color: #000000;
+}

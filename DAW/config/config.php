@@ -40,6 +40,12 @@ function obtener_estructura_directorios($ruta)
                 && $carpeta != "script"
                 && $carpeta != "modules"
                 && $carpeta != ".vite"
+                && $carpeta != "imagenes"
+                && $carpeta != "capturas"
+                && $carpeta != "video"
+                && $carpeta != "webfonts"
+                && $carpeta != "iconos"
+                && $carpeta != ".vscode"
             ) {
                 echo "<li class='lilista'><a class ='alista'href='$ruta_completa'><span class='spanlista'>$carpeta</span></a></li>";
                 obtener_estructura_directorios($ruta_completa);

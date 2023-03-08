@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Desarrollo entorno cliente - Jose Manuel Lopez Valero</title>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
     </head>
 
 <body>

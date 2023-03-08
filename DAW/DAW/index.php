@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Despliege de aplicaciones multiplataforma - Jose Manuel Lopez Valero</title>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
     </head>
 
 <body>
