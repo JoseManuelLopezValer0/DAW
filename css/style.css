@@ -49,7 +49,7 @@
 
 .lilista {
   float: none;
-  width: 100px;
+  width: max-content;
   display: block;
   border: 1px solid #cacaca;
   border-radius: 5px;
