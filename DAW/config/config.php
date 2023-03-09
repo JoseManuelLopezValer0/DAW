@@ -49,7 +49,7 @@ function obtener_estructura_directorios($ruta)
             ) {
                 echo "<li class='lilista'><a class ='alista'href='$ruta_completa'><span class='spanlista'>$carpeta</span></a></li>";
                 obtener_estructura_directorios($ruta_completa);
-            }
+            } 
         }
 
         closedir($gestor);
