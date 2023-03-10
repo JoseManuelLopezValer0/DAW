@@ -15,15 +15,19 @@
   .RRSS {
     display: none;
   }
-  nav li {
+  nav ul li  {
     display: flex;
+    width: 100%;
   }
 }
-
-@media (max-width: 1400px) {
-
+@media (min-width: 900px) {
+  nav ul li  {
+    display: inline-block;
+  }
+  nav ul li a {
+    width: 100%;
+  }
 }
-
 
 
 :root {
@@ -36,7 +40,7 @@
   --color-secondary: #fff542;
   --background-color: #000;
 }
-cabecera {
+header {
   color: var(--color-primary);
 }
 body {
@@ -66,12 +70,20 @@ nav a {
 }
 
 nav li {
-  display: inline-block;
   margin: 0 1rem;
+ 
 }
 
-nav li span {
-  color: var(--color-primary);
+nav ul {
+  padding: 0px;
+}
+nav ul li a {
+  width: 100%;
+}
+
+nav li :hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 
@@ -167,7 +179,6 @@ footer {
 }
 
 footer a {
-  position: left;
   color: var(--color-secondary);
   text-decoration: none;
 }
@@ -175,8 +186,4 @@ footer a {
 p.RRSS i {
   color: var(--color-secondary);
   padding: 5px;
-}
-
-footer img {
-  position: right;
 }
