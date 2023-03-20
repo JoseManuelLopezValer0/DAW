@@ -64,7 +64,7 @@
       ?>
     </main>
     <footer>
-      <h3>Para saber como es la indexzacion de los directorios, mira el codigo en <a href="DAW/config/">config</a></h3>
+      <h3>Para saber como es la indexzacion de los directorios, mira el codigo en <a href="../config/">config</a></h3>
     </footer>
     <aside class="social">
       <a href="https://github.com/JoseManuelLopezValer0"><img src="../../img/git.png"></a>
