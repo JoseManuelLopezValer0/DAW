@@ -258,9 +258,7 @@ a :hover {
 .contenido.aparecer {
   animation: aparecer 1s ease-in-out forwards;
 }
-li.inicio {
-  display: none;
-}
+
 
 nav ul li a {
   border-radius: 5px;
