@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <script src="../../js/main.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Recuperaciones</title>
 </head>
