@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <script src="../../js/main.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <title>Inicio</title>
+  <title>Recuperaciones</title>
 </head>
 
 <body>
