@@ -1,0 +1,46 @@
+header {
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  margin: 1%;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+.op {
+  display: block;
+  border: 1px solid black;
+  padding: 0.5% 3%;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  
+}
+
+.articulo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+}
+
+article {
+  border: 1px solid black;
+  padding: 0.5% 3%;
+  margin: 1%;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: min-content;
+}
+
+footer {
+  text-align: bottom;
+}
