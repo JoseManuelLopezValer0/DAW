@@ -207,21 +207,6 @@ a :hover {
   background-color: #cacaca00;
 }
 
-.barra-carga {
-  width: 50%;
-  height: 10px;
-  background-color: #585858;
-  border-radius: 50px;
-}
-
-.barra-progreso {
-  width: 0%;
-  height: 100%;
-  background-color: #ffffff;
-  transition: width 0.5s ease-in-out;
-  border-radius: 50px;
-}
-
 .contenedor-carga {
   display: flex;
   justify-content: center;
@@ -230,18 +215,8 @@ a :hover {
   display: none;
 }
 
-
-@keyframes llenar {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-.barra-progreso.llena {
-  animation: llenar 1s ease-in-out forwards;
+.contenido {
+  display: none;
 }
 
 @keyframes aparecer {

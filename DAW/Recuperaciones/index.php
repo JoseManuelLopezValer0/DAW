@@ -3,17 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
+  <script src="js/main.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Recuperaciones</title>
 </head>
 
 <body>
-  <div class="contenedor-carga">
-
-    <div class="barra-carga">
-      <div class="barra-progreso"></div>
-    </div>
-  </div>
   <div class="contenido">
     <?php
     
@@ -37,17 +32,38 @@
               is_dir($ruta_completa)
               && $carpeta != "."
               && $carpeta != ".."
-              && $carpeta != ".git"
-              && $carpeta != "config"
+              && $carpeta != "js"
               && $carpeta != "css"
               && $carpeta != "lib"
-              && $carpeta != "icon"
-              && $carpeta != "js"
               && $carpeta != "img"
-              && $carpeta != "fonts"
-              && $carpeta != "assets"
-              && $carpeta != "data"
               && $carpeta != "doc"
+              && $carpeta != "app"
+              && $carpeta != "App"
+              && $carpeta != "src"
+              && $carpeta != ".git"
+              && $carpeta != "icon"
+              && $carpeta != "data"
+              && $carpeta != "dist"
+              && $carpeta != "views"
+              && $carpeta != "video"
+              && $carpeta != "fonts"
+              && $carpeta != ".vite"
+              && $carpeta != "config"
+              && $carpeta != "assets"
+              && $carpeta != "my-app"
+              && $carpeta != "vendor"
+              && $carpeta != "public"
+              && $carpeta != "iconos"
+              && $carpeta != "script"
+              && $carpeta != ".github"
+              && $carpeta != "include"
+              && $carpeta != "scripts"
+              && $carpeta != ".vscode"
+              && $carpeta != "modules"
+              && $carpeta != "webfonts"
+              && $carpeta != "imagenes"
+              && $carpeta != "capturas"
+              && $carpeta != "node_modules"
             ) {
               echo "<li class='lilista' id='$carpeta'><a class ='alista'href='$ruta_completa'><span class='spanlista'>$carpeta</span></a></li>";
             }
