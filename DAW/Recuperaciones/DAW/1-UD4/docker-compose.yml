@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  ssh:
+    # imagen
+    image: ubuntu:latest
+
+    # nombre del contenedor
+    container_name: ubuntu
+
+    # puertos
+    ports:
+      - "22:22"
+
+    # Redes
+    networks:
+      - red1
