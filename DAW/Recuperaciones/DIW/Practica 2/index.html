@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="author" content="López" />
-  <title></title>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Práctica 2</title>
 </head>
 
 <body>
@@ -18,10 +19,10 @@
   </nav>
   <main>
     <section>
-      <h1>Etiquetas nuevas de HTML5</h1>
+      <h2>Etiquetas nuevas de HTML5</h2>
       <article>
-        <h2>Etiquetas para Multimedia: Algunos elementos nuevos servirán para integrar contenido multimedia, pues
-          sabemos que cada día esos nuevos tipos de información están más presentes en la Web.</h2>
+        <h3>Etiquetas para Multimedia: Algunos elementos nuevos servirán para integrar contenido multimedia, pues
+          sabemos que cada día esos nuevos tipos de información están más presentes en la Web.</h3>
         <p>Las etiquetas de HTML5 son:</p>
         <ul>
           <li>audio</li>
@@ -43,17 +44,18 @@
           <p>Ejemplo de source:</p>
           <video controls width="300">
             <source src="video/Lil Nas X - STAR WALKIN' (League of Legends Worlds Anthem).mp4" type="video/mp4" />
+            <source src="video/Lil Nas X - STAR WALKIN' (League of Legends Worlds Anthem).webm" type="video/webm" />
             <p>Tu navegador no soporta el elemento video.</p>
           </video>
           <li>track</li>
           <p>Ejemplo de track:</p>
-          <video controls width="300">
-            <source src="video/Lil Nas X - STAR WALKIN' (League of Legends Worlds Anthem).mp4" type="video/mp4" />
-            <p>Tu navegador no soporta el elemento video.</p>
+          <video controls src="video/friday.mp4">
+            <track default kind="captions" srclang="en" src="media/friday.vtt">
+          </video>
         </ul>
       </article>
       <article>
-        <h2>Nuevos elementos de formulario:</h2>
+        <h3>Nuevos elementos de formulario:</h3>
         <p>Las etiquetas de HTML5 son:</p>
         <ul>
           <li>meter</li>
@@ -82,7 +84,7 @@
         </ul>
       </article>
       <article>
-        <h2>Dibujos completos en HTML5, lienzo de CANVAS:</h2>
+        <h3>Dibujos completos en HTML5:</h3>
         <p>Las etiquetas de HTML5 son:</p>
         <ul>
           <li>canvas</li>
@@ -96,63 +98,74 @@
             contexto.fillStyle = "rgba(0, 0, 200, 0.5)";
             contexto.fillRect(30, 30, 55, 50);
           </script>
+          <li>svg</li>
+          <p>Ejemplo de svg:</p>
+          <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+          </svg>
         </ul>
       </article>
       <article>
-        <h2>Secciones dentro de una página:</h2>
+        <h3>Secciones dentro de una página:</h3>
         <p>Las etiquetas de HTML5 son:</p>
         <ul>
           <li>article</li>
           <p>Ejemplo de article:</p>
           <article>
-            <h2>Titulo del articulo</h2>
+            <h4>Titulo del articulo</h4>
             <p>Contenido del articulo</p>
           </article>
           <li>section</li>
           <p>Ejemplo de section:</p>
           <section>
-            <h2>Titulo de la seccion</h2>
+            <h4>Titulo de la seccion</h4>
             <p>Contenido de la seccion</p>
           </section>
           <li>header</li>
           <p>Ejemplo de header:</p>
           <header>
-            <h1>Titulo del header</h1>
+            <h4>Titulo del header</h4>
             <p>Contenido del header</p>
           </header>
           <li>footer</li>
           <p>Ejemplo de footer:</p>
           <footer>
-            <h1>Titulo del footer</h1>
+            <h4>Titulo del footer</h4>
             <p>Contenido del footer</p>
           </footer>
           <li>main</li>
           <p>Ejemplo de main:</p>
           <main>
-            <h1>Titulo del main</h1>
+            <h4>Titulo del main</h4>
             <p>Contenido del main</p>
           </main>
           <li>aside</li>
           <p>Ejemplo de aside:</p>
           <aside>
-            <h1>Titulo del aside</h1>
+            <h4>Titulo del aside</h4>
             <p>Contenido del aside</p>
           </aside>
           <li>nav</li>
           <p>Ejemplo de nav:</p>
           <nav>
-            <h1>Titulo del nav</h1>
+            <h4>Titulo del nav</h4>
             <p>Contenido del nav</p>
           </nav>
         </ul>
       </article>
       <article>
-        <h2>Otros tipos de informaciones:</h2>
+        <h3>Otros tipos de informaciones:</h3>
         <p>Las etiquetas de HTML5 son:</p>
         <ul>
           <li>bdi</li>
           <p>Ejemplo de bdi:</p>
-          <p>El texto <bdi>escribir</bdi> en este parrafo</p>
+          <p><ul>
+            <li><bdi class="name">Evil Steven</bdi>: 1st place</li>
+            <li><bdi class="name">François fatale</bdi>: 2nd place</li>
+            <li><span class="name">سما</span>: 3rd place</li>
+            <li><bdi class="name">الرجل القوي إيان</bdi>: 4th place</li>
+            <li><span class="name" dir="auto">سما</span>: 5th place</li>
+          </ul></p>
           <li>menu</li>
           <p>Ejemplo de menu:</p>
           <menu>
@@ -166,45 +179,33 @@
           <p>
             <command type="command" label="Ejemplo de command"> alert("Ejemplo de command"); </command>
           </p>
-          <li>details</li>
+          <li>details y summary</li>
           <p>Ejemplo de details:</p>
           <details>
             <summary>Titulo del details</summary>
             <p>Contenido del details</p>
           </details>
-          <li>summary</li>
-          <p>Ejemplo de summary:</p>
-          <details>
-            <summary>Titulo del details</summary>
-            <p>Contenido del details</p>
-          </details>
-          <li>figure</li>
+          <p></p>
+          <li>figure y figcaption<li>
           <p>Ejemplo de figure:</p>
           <figure>
-            <img src="img/imagen.jpg" alt="Imagen de ejemplo" />
+            <img src="img/image.jpg" alt="Imagen de ejemplo" />
             <figcaption>Figura 1: Imagen de ejemplo</figcaption>
           </figure>
-          <li>figcaption</li>
-          <p>Ejemplo de figcaption:</p>
-          <figure>
-            <img src="img/imagen.jpg" alt="Imagen de ejemplo" />
-            <figcaption>Figura 1: Imagen de ejemplo</figcaption>
-          </figure>
-          <li>hgroup</li>
-          <p>Ejemplo de hgroup:</p>
-          <hgroup>
-            <h1>Titulo 1</h1>
-            <h2>Titulo 2</h2>
-          </hgroup>
           <li>mark</li>
           <p>Ejemplo de mark:</p>
           <p>El texto <mark>escribir</mark> en este parrafo</p>
           <li>time</li>
           <p>Ejemplo de time:</p>
-          <p>El texto <time datetime="2013-04-06T12:32+00:00">escribir</time> en este parrafo</p>
+          <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
           <li>wbr</li>
           <p>Ejemplo de wbr:</p>
-          <p>El texto <wbr>escribir</wbr> en este parrafo</p>
+          <div id="example-paragraphs">
+            <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
+            <p>Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz</p>
+            <p>Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz</p>
+        </div>
+        
         </ul>
       </article>
     </section>
