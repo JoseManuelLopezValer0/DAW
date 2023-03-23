@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="López" />
+  <title></title>
+</head>
+
+<body>
+  <header>
+    <h1>Práctica 2</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h1>Etiquetas nuevas de HTML5</h1>
+      <article>
+        <h2>Etiquetas para Multimedia: Algunos elementos nuevos servirán para integrar contenido multimedia, pues
+          sabemos que cada día esos nuevos tipos de información están más presentes en la Web.</h2>
+        <p>Las etiquetas de HTML5 son:</p>
+        <ul>
+          <li>audio</li>
+          <p>Ejemplo de audio:</p>
+          <audio controls>
+            <source src="audio\june - A Little Messed Up.mp3" type="audio/mpeg" />
+            <p>Tu navegador no soporta el elemento audio.</p>
+          </audio>
+          <li>video</li>
+          <p>Ejemplo de video:</p>
+          <video controls width="300">
+            <source src="video/Lil Nas X - STAR WALKIN' (League of Legends Worlds Anthem).mp4" type="video/mp4" />
+            <p>Tu navegador no soporta el elemento video.</p>
+          </video>
+          <li>embed</li>
+          <p>Ejemplo de embed:</p>
+          <embed src="video/Lil Nas X - STAR WALKIN' (League of Legends Worlds Anthem).mp4" type="video/mp4" />
+          <li>source</li>
+          <p>Ejemplo de source:</p>
+          <video controls width="300">
+            <source src="video/Lil Nas X - STAR WALKIN' (League of Legends Worlds Anthem).mp4" type="video/mp4" />
+            <p>Tu navegador no soporta el elemento video.</p>
+          </video>
+          <li>track</li>
+          <p>Ejemplo de track:</p>
+          <video controls width="300">
+            <source src="video/Lil Nas X - STAR WALKIN' (League of Legends Worlds Anthem).mp4" type="video/mp4" />
+            <p>Tu navegador no soporta el elemento video.</p>
+        </ul>
+      </article>
+      <article>
+        <h2>Nuevos elementos de formulario:</h2>
+        <p>Las etiquetas de HTML5 son:</p>
+        <ul>
+          <li>meter</li>
+          <p>Ejemplo de meter:</p>
+          <meter value="2" min="0" max="10">2 out of 10</meter>
+          <li>progress</li>
+          <p>Ejemplo de progress:</p>
+          <progress value="32" max="100"></progress>
+          <li>datalist</li>
+          <p>Ejemplo de datalist:</p>
+          <input list="browsers" name="browser" />
+          <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+          <li>keygen</li>
+          <p>Ejemplo de keygen:</p>
+          "
+          <"keygen name="security" />
+          <li>output</li>
+          <p>Ejemplo de output:</p>
+          <p>El resultado de 5 + 7 es: <output name="x" for="a b">12</output></p>
+        </ul>
+      </article>
+      <article>
+        <h2>Dibujos completos en HTML5, lienzo de CANVAS:</h2>
+        <p>Las etiquetas de HTML5 son:</p>
+        <ul>
+          <li>canvas</li>
+          <p>Ejemplo de canvas:</p>
+          <canvas id="lienzo" width="100" height="100"></canvas>
+          <script>
+            var lienzo = document.getElementById("lienzo");
+            var contexto = lienzo.getContext("2d");
+            contexto.fillStyle = "rgb(200,0,0)";
+            contexto.fillRect(10, 10, 55, 50);
+            contexto.fillStyle = "rgba(0, 0, 200, 0.5)";
+            contexto.fillRect(30, 30, 55, 50);
+          </script>
+        </ul>
+      </article>
+      <article>
+        <h2>Secciones dentro de una página:</h2>
+        <p>Las etiquetas de HTML5 son:</p>
+        <ul>
+          <li>article</li>
+          <p>Ejemplo de article:</p>
+          <article>
+            <h2>Titulo del articulo</h2>
+            <p>Contenido del articulo</p>
+          </article>
+          <li>section</li>
+          <p>Ejemplo de section:</p>
+          <section>
+            <h2>Titulo de la seccion</h2>
+            <p>Contenido de la seccion</p>
+          </section>
+          <li>header</li>
+          <p>Ejemplo de header:</p>
+          <header>
+            <h1>Titulo del header</h1>
+            <p>Contenido del header</p>
+          </header>
+          <li>footer</li>
+          <p>Ejemplo de footer:</p>
+          <footer>
+            <h1>Titulo del footer</h1>
+            <p>Contenido del footer</p>
+          </footer>
+          <li>main</li>
+          <p>Ejemplo de main:</p>
+          <main>
+            <h1>Titulo del main</h1>
+            <p>Contenido del main</p>
+          </main>
+          <li>aside</li>
+          <p>Ejemplo de aside:</p>
+          <aside>
+            <h1>Titulo del aside</h1>
+            <p>Contenido del aside</p>
+          </aside>
+          <li>nav</li>
+          <p>Ejemplo de nav:</p>
+          <nav>
+            <h1>Titulo del nav</h1>
+            <p>Contenido del nav</p>
+          </nav>
+        </ul>
+      </article>
+      <article>
+        <h2>Otros tipos de informaciones:</h2>
+        <p>Las etiquetas de HTML5 son:</p>
+        <ul>
+          <li>bdi</li>
+          <p>Ejemplo de bdi:</p>
+          <p>El texto <bdi>escribir</bdi> en este parrafo</p>
+          <li>menu</li>
+          <p>Ejemplo de menu:</p>
+          <menu>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+          </menu>
+          <p></p>
+          <li>command</li>
+          <p>Ejemplo de command:</p>
+          <p>
+            <command type="command" label="Ejemplo de command"> alert("Ejemplo de command"); </command>
+          </p>
+          <li>details</li>
+          <p>Ejemplo de details:</p>
+          <details>
+            <summary>Titulo del details</summary>
+            <p>Contenido del details</p>
+          </details>
+          <li>summary</li>
+          <p>Ejemplo de summary:</p>
+          <details>
+            <summary>Titulo del details</summary>
+            <p>Contenido del details</p>
+          </details>
+          <li>figure</li>
+          <p>Ejemplo de figure:</p>
+          <figure>
+            <img src="img/imagen.jpg" alt="Imagen de ejemplo" />
+            <figcaption>Figura 1: Imagen de ejemplo</figcaption>
+          </figure>
+          <li>figcaption</li>
+          <p>Ejemplo de figcaption:</p>
+          <figure>
+            <img src="img/imagen.jpg" alt="Imagen de ejemplo" />
+            <figcaption>Figura 1: Imagen de ejemplo</figcaption>
+          </figure>
+          <li>hgroup</li>
+          <p>Ejemplo de hgroup:</p>
+          <hgroup>
+            <h1>Titulo 1</h1>
+            <h2>Titulo 2</h2>
+          </hgroup>
+          <li>mark</li>
+          <p>Ejemplo de mark:</p>
+          <p>El texto <mark>escribir</mark> en este parrafo</p>
+          <li>time</li>
+          <p>Ejemplo de time:</p>
+          <p>El texto <time datetime="2013-04-06T12:32+00:00">escribir</time> en este parrafo</p>
+          <li>wbr</li>
+          <p>Ejemplo de wbr:</p>
+          <p>El texto <wbr>escribir</wbr> en este parrafo</p>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
