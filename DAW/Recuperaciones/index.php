@@ -46,6 +46,8 @@
               && $carpeta != "dist"
               && $carpeta != "views"
               && $carpeta != "video"
+              && $carpeta != "audio"
+              && $carpeta != "media"
               && $carpeta != "fonts"
               && $carpeta != ".vite"
               && $carpeta != "config"
