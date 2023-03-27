@@ -44,6 +44,7 @@
           <p>Ejemplo de source:</p>
           <video controls width="300">
             <source src="video/Lil Nas X - STAR WALKIN' (League of Legends Worlds Anthem).mp4" type="video/mp4" />
+            <source src="video/Lil Nas X - STAR WALKIN' (League of Legends Worlds Anthem).webm" type="video/webm" />
             <p>Tu navegador no soporta el elemento video.</p>
           </video>
           <li>track</li>
@@ -158,7 +159,13 @@
         <ul>
           <li>bdi</li>
           <p>Ejemplo de bdi:</p>
-          <p>El texto <bdi>escribir</bdi> en este parrafo</p>
+          <p><ul>
+            <li><bdi class="name">Evil Steven</bdi>: 1st place</li>
+            <li><bdi class="name">François fatale</bdi>: 2nd place</li>
+            <li><span class="name">سما</span>: 3rd place</li>
+            <li><bdi class="name">الرجل القوي إيان</bdi>: 4th place</li>
+            <li><span class="name" dir="auto">سما</span>: 5th place</li>
+          </ul></p>
           <li>menu</li>
           <p>Ejemplo de menu:</p>
           <menu>
@@ -172,28 +179,17 @@
           <p>
             <command type="command" label="Ejemplo de command"> alert("Ejemplo de command"); </command>
           </p>
-          <li>details</li>
+          <li>details y summary</li>
           <p>Ejemplo de details:</p>
           <details>
             <summary>Titulo del details</summary>
             <p>Contenido del details</p>
           </details>
-          <li>summary</li>
-          <p>Ejemplo de summary:</p>
-          <details>
-            <summary>Titulo del details</summary>
-            <p>Contenido del details</p>
-          </details>
-          <li>figure</li>
+          <p></p>
+          <li>figure y figcaption<li>
           <p>Ejemplo de figure:</p>
           <figure>
-            <img src="img/imagen.jpg" alt="Imagen de ejemplo" />
-            <figcaption>Figura 1: Imagen de ejemplo</figcaption>
-          </figure>
-          <li>figcaption</li>
-          <p>Ejemplo de figcaption:</p>
-          <figure>
-            <img src="img/imagen.jpg" alt="Imagen de ejemplo" />
+            <img src="img/image.jpg" alt="Imagen de ejemplo" />
             <figcaption>Figura 1: Imagen de ejemplo</figcaption>
           </figure>
           <li>mark</li>
@@ -201,10 +197,15 @@
           <p>El texto <mark>escribir</mark> en este parrafo</p>
           <li>time</li>
           <p>Ejemplo de time:</p>
-          <p>El texto <time datetime="2013-04-06T12:32+00:00">escribir</time> en este parrafo</p>
+          <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
           <li>wbr</li>
           <p>Ejemplo de wbr:</p>
-          <p>El texto <wbr>escribir</wbr> en este parrafo</p>
+          <div id="example-paragraphs">
+            <p>Fernstraßenbauprivatfinanzierungsgesetz</p>
+            <p>Fernstraßen<wbr>bau<wbr>privat<wbr>finanzierungs<wbr>gesetz</p>
+            <p>Fernstraßen&shy;bau&shy;privat&shy;finanzierungs&shy;gesetz</p>
+        </div>
+        
         </ul>
       </article>
     </section>
