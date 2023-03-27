@@ -1,0 +1,57 @@
+video {
+    width: 250px;
+}
+
+video::cue {
+    font-size: 1rem;
+}
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+    width: 250px;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+}
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+#example-paragraphs {
+    background-color: white;
+    overflow: hidden;
+    resize: horizontal;
+    width: 9rem;
+    border: 2px dashed #999;
+}
