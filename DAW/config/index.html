@@ -34,7 +34,7 @@
           listado de estas.
         </p>
         <h4>config.php</h4>
-        <pre class="line-numbers"><code class="language-php">&lt;?php
+        <pre class="line-numbers"><code class="language-php match-braces rainbow-braces">&lt;?php
 function obtener_estructura_directorios($ruta)
 {
     // Se comprueba que realmente sea la ruta de un directorio
@@ -48,7 +48,11 @@ function obtener_estructura_directorios($ruta)
 
             $ruta_completa = $ruta . "/" . $carpeta;
 
-            // Se muestran todas las carpetas excepto ".", "..",".git","config","css","lib","icon","js","img","fonts","assets","data","doc,"app" y "vendor" 
+            /** Se muestran todas las carpetas excepto ".", "..", "js", "css", "lib", "img", "doc", "app", "App", 
+            * "src", ".git", "icon", "data", "dist", "views", "video", "fonts", ".vite", "config", "assets", "my-app",
+            * "vendor", "public", "iconos", "script", ".github", "include", "scripts", ".vscode", "modules", "webfonts",
+            * "imagenes", "capturas", "node_modules" ;
+            **/
             if (
                 is_dir($ruta_completa)
                 && $carpeta != "."
@@ -98,7 +102,6 @@ function obtener_estructura_directorios($ruta)
         echo "No es una ruta de directorio valida<br/>";
     }
 }
-
 </code></pre>
       </article>
       <article>

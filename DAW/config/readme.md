@@ -20,9 +20,11 @@ config.php
 
                 $ruta_completa = $ruta . "/" . $carpeta;
 
-                /** Se muestran todas las carpetas excepto:
-                * ".", "..",".git","config","css","lib","icon","js","img","fonts","assets","data","doc,"app" y "vendor"
-                */
+                /** Se muestran todas las carpetas excepto ".", "..", "js", "css", "lib", "img", "doc", "app", "App", 
+            * "src", ".git", "icon", "data", "dist", "views", "video", "fonts", ".vite", "config", "assets", "my-app",
+            * "vendor", "public", "iconos", "script", ".github", "include", "scripts", ".vscode", "modules", "webfonts",
+            * "imagenes", "capturas", "node_modules" ;
+            **/
                 if (
                     is_dir($ruta_completa)
                     && $carpeta != "."
