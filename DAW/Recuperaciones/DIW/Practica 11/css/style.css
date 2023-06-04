@@ -1,0 +1,28 @@
+@media (max-width: 500px) {
+
+}
+
+@media (max-width: 830px) {
+
+}
+
+
+
+main {
+  margin-top: 60px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+main > h4 {
+  border : 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
